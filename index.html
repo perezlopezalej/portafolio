@@ -3,28 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ══ SEO BÁSICO ══ -->
 <title>Alejandro Pérez · Webs para negocios locales en Andalucía</title>
 <meta name="description" content="Full Stack Developer en Conil de la Frontera. Hago webs para negocios de Andalucía que quieren más clientes. Desde 300€, entrega en 7 días, respuesta en 24h.">
 <meta name="keywords" content="diseño web Conil, páginas web negocios locales Andalucía, desarrollador web Cádiz, crear web barata profesional">
 <meta name="author" content="Alejandro Pérez López">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://alejandrodev.es">
-
-<!-- ══ OPEN GRAPH ══ -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alejandrodev.es">
 <meta property="og:title" content="Alejandro Pérez · Webs para negocios locales en Andalucía">
 <meta property="og:description" content="Hago webs para negocios de Andalucía. Desde 300€. Entrega en 7 días. Respuesta en 24h.">
 <meta property="og:locale" content="es_ES">
-
-<!-- ══ TWITTER CARD ══ -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Alejandro Pérez · Webs para negocios locales">
 <meta name="twitter:description" content="Hago webs para negocios de Andalucía. Desde 300€. Entrega en 7 días.">
 
-<!-- ══ SCHEMA MARKUP — LocalBusiness + Person ══ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,10 +28,6 @@
       "name": "Alejandro Pérez López",
       "jobTitle": "Full Stack Developer",
       "url": "https://alejandrodev.es",
-      "sameAs": [
-        "https://linkedin.com/in/alejandrodev",
-        "https://github.com/alejandrodev"
-      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Conil de la Frontera",
@@ -61,29 +50,12 @@
         "addressLocality": "Conil de la Frontera",
         "addressRegion": "Cádiz",
         "addressCountry": "ES"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de desarrollo web",
-        "itemListElement": [
-          {"@type":"Offer","name":"Web para negocio local","price":"300","priceCurrency":"EUR"},
-          {"@type":"Offer","name":"Tienda online","price":"600","priceCurrency":"EUR"},
-          {"@type":"Offer","name":"Mantenimiento web","price":"30","priceCurrency":"EUR"}
-        ]
       }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type":"Question","name":"¿Cuánto cuesta una web?","acceptedAnswer":{"@type":"Answer","text":"Las webs para negocios locales empiezan desde 300€. El precio final depende de lo que necesites. Te mando presupuesto cerrado en 24h."}},
-        {"@type":"Question","name":"¿Cuánto tarda en estar lista la web?","acceptedAnswer":{"@type":"Answer","text":"La entrega media es de 7 días desde que aprobamos el diseño."}}
-      ]
     }
   ]
 }
 </script>
 
-<!-- ══ FUENTES ══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -118,17 +90,9 @@
 html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--ink);font-family:var(--FB);overflow-x:hidden}
 
-/* GRAIN */
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.5}
 
-/* ══ NAV ══ */
-nav{
-  position:sticky;top:0;z-index:200;
-  background:rgba(242,237,215,.94);backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--rule);
-  padding:0 clamp(1rem,4vw,3rem);
-  display:flex;align-items:center;justify-content:space-between;height:60px;
-}
+nav{position:sticky;top:0;z-index:200;background:rgba(242,237,215,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule);padding:0 clamp(1rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;height:60px;}
 .n-logo{font-family:var(--FH);font-size:1.2rem;font-weight:700;color:var(--olive);text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
 .n-dot{width:8px;height:8px;border-radius:50%;background:var(--terra);flex-shrink:0;animation:pulse 2.5s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.65)}}
@@ -138,57 +102,20 @@ nav{
 .n-cta{background:var(--terra)!important;color:#fff!important;font-weight:600!important;box-shadow:0 2px 12px rgba(212,133,90,.3)!important}
 .n-cta:hover{opacity:.9!important;transform:translateY(-1px)}
 
-/* ══ HERO ══ */
-#hero{
-  position:relative;z-index:1;
-  min-height:calc(100vh - 60px);
-  display:grid;grid-template-columns:1fr 420px;gap:3rem;
-  align-items:center;
-  padding:4rem clamp(1rem,4vw,3rem);
-  max-width:1200px;margin:0 auto;
-}
+#hero{position:relative;z-index:1;min-height:calc(100vh - 60px);display:grid;grid-template-columns:1fr 420px;gap:3rem;align-items:center;padding:4rem clamp(1rem,4vw,3rem);max-width:1200px;margin:0 auto;}
 .h-tag{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;color:var(--terra);letter-spacing:.04em;margin-bottom:1.25rem}
 .h-tag::before{content:'';width:24px;height:1.5px;background:var(--terra);flex-shrink:0}
-
-.h-title{
-  font-family:var(--FH);
-  font-size:clamp(2.8rem,5vw,4.5rem);
-  font-weight:700;line-height:1.05;letter-spacing:-.02em;
-  color:var(--ink);margin-bottom:.75rem;
-}
+.h-title{font-family:var(--FH);font-size:clamp(2.8rem,5vw,4.5rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin-bottom:.75rem;}
 .h-title em{font-style:italic;color:var(--terra)}
-.h-title .hl{
-  position:relative;display:inline;
-  background:linear-gradient(to right,var(--terra),#C1502E);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-
+.h-title .hl{position:relative;display:inline;background:linear-gradient(to right,var(--terra),#C1502E);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .h-sub{font-size:1.05rem;color:var(--muted);line-height:1.75;max-width:480px;margin-bottom:2rem}
 .h-sub b{color:var(--olive);font-weight:600}
-
 .h-actions{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin-bottom:2.5rem}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:8px;
-  background:var(--terra);color:#fff;
-  font-family:var(--FB);font-size:.95rem;font-weight:600;
-  padding:.9rem 1.85rem;border-radius:8px;
-  text-decoration:none;border:none;cursor:pointer;
-  transition:transform .15s,box-shadow .15s;
-  box-shadow:0 4px 20px rgba(212,133,90,.35);
-}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--terra);color:#fff;font-family:var(--FB);font-size:.95rem;font-weight:600;padding:.9rem 1.85rem;border-radius:8px;text-decoration:none;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 20px rgba(212,133,90,.35);}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,133,90,.45)}
 .btn-primary:active{transform:translateY(0)}
-.btn-ghost{
-  display:inline-flex;align-items:center;gap:6px;
-  background:transparent;color:var(--olive);
-  font-family:var(--FB);font-size:.95rem;font-weight:500;
-  padding:.9rem 1.5rem;border-radius:8px;
-  text-decoration:none;border:1.5px solid rgba(44,59,45,.25);
-  transition:background .15s,border-color .15s;
-}
+.btn-ghost{display:inline-flex;align-items:center;gap:6px;background:transparent;color:var(--olive);font-family:var(--FB);font-size:.95rem;font-weight:500;padding:.9rem 1.5rem;border-radius:8px;text-decoration:none;border:1.5px solid rgba(44,59,45,.25);transition:background .15s,border-color .15s;}
 .btn-ghost:hover{background:var(--cream2);border-color:rgba(44,59,45,.4)}
-
 .h-proof{display:flex;gap:2rem;padding-top:1.75rem;border-top:1px solid var(--rule);flex-wrap:wrap;align-items:flex-end}
 .h-stat-n{font-family:var(--FH);font-size:2rem;font-weight:700;color:var(--olive);line-height:1}
 .h-stat-n span{color:var(--terra)}
@@ -198,40 +125,13 @@ nav{
 .h-stat-main{display:flex;flex-direction:column}
 .h-stat-divider{width:1px;height:48px;background:var(--rule);flex-shrink:0;align-self:center}
 
-/* Hero right */
 .h-right{position:relative;display:flex;flex-direction:column;align-items:center;gap:1.25rem}
-.h-avatar{
-  width:200px;height:200px;border-radius:50%;
-  background:var(--olive);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--FH);font-size:4.5rem;font-weight:700;
-  color:rgba(242,237,215,.35);
-  border:5px solid var(--cream2);
-  box-shadow:var(--shadow-lg);
-  position:relative;overflow:hidden;flex-shrink:0;
-}
+.h-avatar{width:200px;height:200px;border-radius:50%;background:var(--olive);display:flex;align-items:center;justify-content:center;font-family:var(--FH);font-size:4.5rem;font-weight:700;color:rgba(242,237,215,.35);border:5px solid var(--cream2);box-shadow:var(--shadow-lg);position:relative;overflow:hidden;flex-shrink:0;}
 .h-avatar::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 35% 35%,rgba(212,133,90,.18),transparent 60%)}
-.h-avatar-hint{
-  position:absolute;bottom:0;left:0;right:0;
-  background:rgba(44,59,45,.75);backdrop-filter:blur(4px);
-  font-size:.65rem;font-weight:600;color:var(--cream);
-  text-align:center;padding:.4rem;letter-spacing:.06em;
-  text-transform:uppercase;
-}
-.h-avail{
-  display:inline-flex;align-items:center;gap:8px;
-  background:var(--olive);color:var(--cream);
-  font-size:.78rem;font-weight:600;
-  padding:.55rem 1.25rem;border-radius:100px;letter-spacing:.02em;
-}
+.h-avatar-hint{position:absolute;bottom:0;left:0;right:0;background:rgba(44,59,45,.75);backdrop-filter:blur(4px);font-size:.65rem;font-weight:600;color:var(--cream);text-align:center;padding:.4rem;letter-spacing:.06em;text-transform:uppercase;}
+.h-avail{display:inline-flex;align-items:center;gap:8px;background:var(--olive);color:var(--cream);font-size:.78rem;font-weight:600;padding:.55rem 1.25rem;border-radius:100px;letter-spacing:.02em;}
 .h-avail::before{content:'';width:7px;height:7px;border-radius:50%;background:#6FCF97;flex-shrink:0;animation:pulse 2s ease-in-out infinite}
-.h-testi{
-  background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);
-  padding:1.75rem;width:100%;
-  box-shadow:var(--shadow);
-  transition:transform var(--transition),box-shadow var(--transition);
-  border-left:3px solid var(--terra);
-}
+.h-testi{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;width:100%;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition);border-left:3px solid var(--terra);}
 .h-testi:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
 .h-testi-quote{font-size:2.5rem;color:var(--terra);line-height:.4;margin-bottom:.65rem;font-family:var(--FH)}
 .h-testi-text{font-family:var(--FH);font-size:1.1rem;font-weight:500;font-style:italic;color:var(--ink);line-height:1.6;margin-bottom:1rem}
@@ -241,7 +141,6 @@ nav{
 .h-testi-biz{font-size:.72rem;color:var(--muted)}
 .stars{color:var(--terra);font-size:.75rem;margin-left:auto;letter-spacing:.05em}
 
-/* ══ NICHO STRIP ══ */
 .nicho-strip{position:relative;z-index:1;background:var(--olive);padding:1.1rem clamp(1rem,4vw,3rem);overflow:hidden}
 .nicho-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;justify-content:center}
 .nicho-label{font-size:.7rem;font-weight:600;color:rgba(242,237,215,.35);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
@@ -249,37 +148,19 @@ nav{
 .nicho-item{display:inline-flex;align-items:center;gap:.35rem;background:rgba(242,237,215,.07);border:1px solid rgba(242,237,215,.1);color:rgba(242,237,215,.65);font-size:.78rem;font-weight:500;padding:.35rem .85rem;border-radius:100px;transition:background .2s}
 .nicho-item:hover{background:rgba(242,237,215,.14);color:var(--cream)}
 
-/* ══ SECCIÓN BASE ══ */
 .section{position:relative;z-index:1;padding:5rem clamp(1rem,4vw,3rem);max-width:1200px;margin:0 auto}
 .section.alt{background:var(--cream2);max-width:none;padding-left:0;padding-right:0}
 .section.alt>.section-inner{max-width:1200px;margin:0 auto;padding:5rem clamp(1rem,4vw,3rem)}
-
 .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);display:flex;align-items:center;gap:8px;margin-bottom:.75rem}
 .eyebrow::before{content:'';width:20px;height:1.5px;background:var(--terra);flex-shrink:0}
 .sec-title{font-family:var(--FH);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.05;margin-bottom:.5rem;color:var(--ink)}
 .sec-sub{font-size:.95rem;color:var(--muted);line-height:1.65;max-width:520px}
 
-/* ══ SERVICIOS ══ */
+/* ══ SERVICIOS — iconos SVG ══ */
 .srv-list{margin-top:3rem;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--rule)}
-.srv-row{
-  display:grid;grid-template-columns:44px 1fr auto;gap:0 1.5rem;
-  align-items:center;padding:1.5rem 1.5rem;
-  border-bottom:1px solid var(--rule);
-  cursor:pointer;
-  transition:padding-left var(--transition),background var(--transition),border-color var(--transition);
-  position:relative;background:#fff;
-}
-.srv-row::after{
-  content:'→';position:absolute;right:1.5rem;
-  font-size:1.1rem;color:var(--soft);
-  transition:right var(--transition),color var(--transition),transform var(--transition),opacity var(--transition);
-  opacity:0;
-}
-.srv-row:hover{
-  padding-left:2rem;
-  background:var(--terra);
-  border-color:var(--terra);
-}
+.srv-row{display:grid;grid-template-columns:44px 1fr auto;gap:0 1.5rem;align-items:center;padding:1.5rem 1.5rem;border-bottom:1px solid var(--rule);cursor:pointer;transition:padding-left var(--transition),background var(--transition),border-color var(--transition);position:relative;background:#fff;}
+.srv-row::after{content:'→';position:absolute;right:1.5rem;font-size:1.1rem;color:var(--soft);transition:right var(--transition),color var(--transition),transform var(--transition),opacity var(--transition);opacity:0;}
+.srv-row:hover{padding-left:2rem;background:var(--terra);border-color:var(--terra);}
 .srv-row:hover::after{right:1.25rem;color:#fff;transform:translateX(4px);opacity:1}
 .srv-row:last-child{border-bottom:none}
 .srv-row:hover .srv-name{color:#fff}
@@ -289,17 +170,18 @@ nav{
   width:44px;height:44px;border-radius:var(--radius-sm);
   background:var(--t2);
   display:flex;align-items:center;justify-content:center;
-  font-size:1.2rem;flex-shrink:0;
-  transition:background var(--transition),transform var(--transition);
+  flex-shrink:0;
+  color:var(--terra);
+  transition:background var(--transition),transform var(--transition),color var(--transition);
 }
-.srv-row:hover .srv-ico{background:rgba(255,255,255,.2);transform:scale(1.1) rotate(-3deg)}
+.srv-ico svg{width:20px;height:20px;flex-shrink:0}
+.srv-row:hover .srv-ico{background:rgba(255,255,255,.2);transform:scale(1.1) rotate(-3deg);color:#fff;}
 .srv-name{font-family:var(--FH);font-size:1.1rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.2rem;color:var(--ink);transition:color var(--transition)}
 .srv-desc{font-size:.83rem;color:var(--muted);line-height:1.5;transition:color var(--transition)}
 .srv-price{font-family:var(--FH);font-size:1.05rem;font-weight:700;color:var(--terra);white-space:nowrap;margin-right:2.5rem;transition:color var(--transition)}
 
-/* ══ PROYECTOS ══ */
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:3rem}
-.proj-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow)}
+.proj-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition),background var(--transition);}
 .proj-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--terra);background:var(--terra)}
 .proj-card:hover .proj-name{color:#fff}
 .proj-card:hover .proj-desc{color:rgba(255,255,255,.65)}
@@ -315,7 +197,6 @@ nav{
 .proj-link{font-size:.82rem;font-weight:600;color:var(--terra);text-decoration:none;display:inline-flex;align-items:center;gap:5px;transition:gap var(--transition)}
 .proj-link:hover{gap:10px}
 
-/* ══ PROCESO ══ */
 .proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
 .proc-step{padding:1.75rem 1.25rem;border-left:2px solid var(--rule);position:relative;transition:border-color .2s,background .2s;border-radius:0 8px 8px 0}
 .proc-step:hover{border-color:var(--terra);background:rgba(212,133,90,.05)}
@@ -326,7 +207,6 @@ nav{
 .proc-title{font-family:var(--FH);font-size:1.1rem;font-weight:600;margin-bottom:.4rem;transition:color .2s}
 .proc-desc{font-size:.83rem;color:var(--muted);line-height:1.6}
 
-/* Acordeón proceso móvil */
 .proc-accordion{display:none;flex-direction:column;gap:.5rem;margin-top:2rem}
 .proc-acc-item{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-sm);overflow:hidden;transition:border-color var(--transition)}
 .proc-acc-item:hover{border-color:var(--terra)}
@@ -342,10 +222,9 @@ nav{
 .proc-acc-item.open .proc-acc-body{max-height:120px;padding:0 1.25rem 1rem}
 .proc-acc-text{font-size:.85rem;color:var(--muted);line-height:1.65;padding-left:calc(28px + 1rem + 1.2rem + 1rem)}
 
-/* ══ TESTIMONIOS ══ */
 .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:3rem}
-.testi-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition),background var(--transition)}
-.testi-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--terra);background:var(--terra)}
+.testi-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition),background var(--transition);}
+.testi-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--terra);background:var(--terra)}
 .testi-card:hover .testi-text{color:#fff}
 .testi-card:hover .testi-name{color:#fff}
 .testi-card:hover .testi-biz{color:rgba(255,255,255,.6)}
@@ -357,20 +236,12 @@ nav{
 .testi-name{font-size:.88rem;font-weight:600;color:var(--olive)}
 .testi-biz{font-size:.72rem;color:var(--muted)}
 
-/* ══ SOBRE MÍ ══ */
 .about-grid{display:grid;grid-template-columns:300px 1fr;gap:4rem;align-items:center}
-.about-photo{
-  width:300px;height:360px;border-radius:var(--radius-lg);
-  background:var(--olive);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  position:relative;overflow:hidden;
-  box-shadow:var(--shadow-lg);flex-shrink:0;
-}
+.about-photo{width:300px;height:360px;border-radius:var(--radius-lg);background:var(--olive);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow-lg);flex-shrink:0;}
 .about-photo::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 35% 25%,rgba(212,133,90,.2),transparent 60%)}
 .about-photo-letters{font-family:var(--FH);font-size:7rem;font-weight:700;color:rgba(242,237,215,.12);line-height:1;position:relative;z-index:1}
 .about-photo-label{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--terra);color:#fff;font-size:.7rem;font-weight:700;padding:.4rem .95rem;border-radius:100px;letter-spacing:.04em;white-space:nowrap}
 .about-photo-hint{position:absolute;top:1rem;left:50%;transform:translateX(-50%);background:rgba(44,59,45,.7);backdrop-filter:blur(4px);color:rgba(242,237,215,.7);font-size:.62rem;padding:.35rem .8rem;border-radius:100px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
-
 .about-name{font-family:var(--FH);font-size:2.2rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem;line-height:1.05}
 .about-role{font-size:.8rem;font-weight:600;color:var(--terra);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem}
 .about-text{font-size:.95rem;color:var(--muted);line-height:1.75;margin-bottom:.85rem}
@@ -379,7 +250,6 @@ nav{
 .chip{font-size:.75rem;font-weight:500;padding:.35rem .85rem;border-radius:100px;background:var(--cream2);color:var(--olive3);border:1px solid var(--rule);transition:background .15s,border-color .15s,color .15s;cursor:default}
 .chip:hover{background:var(--olive);color:var(--cream);border-color:var(--olive)}
 
-/* ══ FAQ ══ */
 .faq-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:.6rem}
 .faq-item{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-sm);overflow:hidden;transition:border-color var(--transition)}
 .faq-item:hover{border-color:var(--terra)}
@@ -387,15 +257,12 @@ nav{
 .faq-header:hover{background:rgba(212,133,90,.06)}
 .faq-q{font-family:var(--FH);font-size:1rem;font-weight:600;color:var(--ink);line-height:1.3;transition:color var(--transition)}
 .faq-header:hover .faq-q{color:var(--terra)}
-.faq-chevron{color:var(--terra);font-size:.8rem;flex-shrink:0;transition:transform var(--transition)}
-.faq-item.open .faq-chevron{transform:rotate(180deg)}
 .faq-chevron{color:var(--terra);font-size:.8rem;flex-shrink:0;transition:transform .25s}
 .faq-item.open .faq-chevron{transform:rotate(180deg)}
 .faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
 .faq-item.open .faq-body{max-height:200px}
 .faq-a{font-size:.88rem;color:var(--muted);line-height:1.7;padding:0 1.35rem 1.1rem}
 
-/* ══ CONTACTO ══ */
 #contacto{background:var(--olive);position:relative;z-index:1;padding:5rem clamp(1rem,4vw,3rem)}
 .ct-inner{max-width:1200px;margin:0 auto}
 .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
@@ -409,8 +276,6 @@ nav{
 .ct-link::before{content:'↗';color:var(--terra);font-size:.9rem;flex-shrink:0}
 .ct-link:hover{color:var(--cream);gap:14px}
 .ct-link:last-child{border-bottom:none}
-
-/* Formulario */
 .cf{display:flex;flex-direction:column}
 .cf-label{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,237,215,.35);margin:1.25rem 0 .4rem}
 .cf-label:first-child{margin-top:0}
@@ -420,48 +285,20 @@ input,textarea{background:rgba(242,237,215,.07);border:none;border-bottom:1px so
 input::placeholder,textarea::placeholder{color:rgba(242,237,215,.22)}
 input:focus,textarea:focus{border-color:var(--terra)}
 textarea{min-height:110px;resize:none}
-.btn-send{
-  margin-top:1.5rem;
-  background:var(--terra);color:#fff;
-  font-family:var(--FB);font-size:.95rem;font-weight:600;
-  border:none;padding:1rem 2rem;border-radius:8px;
-  cursor:pointer;width:100%;
-  transition:transform .15s,box-shadow .15s;
-  box-shadow:0 4px 20px rgba(212,133,90,.4);
-}
+.btn-send{margin-top:1.5rem;background:var(--terra);color:#fff;font-family:var(--FB);font-size:.95rem;font-weight:600;border:none;padding:1rem 2rem;border-radius:8px;cursor:pointer;width:100%;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 20px rgba(212,133,90,.4);}
 .btn-send:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(212,133,90,.55)}
 .btn-send:active{transform:translateY(0)}
 .form-note{font-size:.72rem;color:rgba(242,237,215,.3);text-align:center;margin-top:.75rem}
 
-/* ══ WHATSAPP FLOAT ══ */
-.wa-float{
-  position:fixed;bottom:1.75rem;right:1.75rem;z-index:500;
-  display:inline-flex;align-items:center;justify-content:flex-start;gap:.65rem;
-  background:#25D366;color:#fff;
-  border-radius:100px;padding:.8rem 1.4rem .8rem .9rem;
-  box-shadow:0 6px 28px rgba(37,211,102,.4);
-  text-decoration:none;font-size:.85rem;font-weight:600;
-  transition:transform .2s,box-shadow .2s;
-  animation:wapop .6s cubic-bezier(.34,1.56,.64,1) 1.5s both;
-}
+.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:500;display:inline-flex;align-items:center;justify-content:flex-start;gap:.65rem;background:#25D366;color:#fff;border-radius:100px;padding:.8rem 1.4rem .8rem .9rem;box-shadow:0 6px 28px rgba(37,211,102,.4);text-decoration:none;font-size:.85rem;font-weight:600;transition:transform .2s,box-shadow .2s;animation:wapop .6s cubic-bezier(.34,1.56,.64,1) 1.5s both;}
 @keyframes wapop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
 .wa-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 36px rgba(37,211,102,.55)}
-.wa-icon-wrap{
-  position:relative;
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-}
+.wa-icon-wrap{position:relative;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .wa-icon{font-size:1.25rem;line-height:1;display:block}
-.wa-pulse{
-  position:absolute;top:-3px;right:-3px;
-  width:9px;height:9px;border-radius:50%;
-  background:#fff;border:1.5px solid #25D366;
-  animation:waring 2s ease-in-out infinite;
-}
+.wa-pulse{position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:#fff;border:1.5px solid #25D366;animation:waring 2s ease-in-out infinite;}
 @keyframes waring{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.5}}
 .wa-txt{white-space:nowrap;line-height:1}
 
-/* ══ FOOTER ══ */
 footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);padding:1.5rem clamp(1rem,4vw,3rem);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;position:relative;z-index:1}
 .f-logo{font-family:var(--FH);font-size:1rem;font-weight:700;color:var(--cream)}
 .f-links{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
@@ -471,7 +308,6 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
 .f-cta:hover{color:var(--cream)!important}
 .f-right{font-size:.75rem;color:rgba(242,237,215,.3)}
 
-/* ══ DISRUPTOR ══ */
 .disruptor{background:var(--olive);position:relative;z-index:1;overflow:hidden}
 .disruptor::before{content:'';position:absolute;top:-80px;right:-80px;width:360px;height:360px;border-radius:50%;background:rgba(212,133,90,.07);pointer-events:none}
 .disruptor-inner{max-width:1200px;margin:0 auto;padding:5rem clamp(1rem,4vw,3rem);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
@@ -485,14 +321,9 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
 .ds-n{font-family:var(--FH);font-size:2.5rem;font-weight:700;color:var(--terra);letter-spacing:-.03em;line-height:1;display:block;margin-bottom:.3rem}
 .ds-l{font-size:.85rem;color:rgba(242,237,215,.45);line-height:1.5;display:block}
 
-/* ══ HOVER SUTIL TARJETAS (sin inversión completa) ══ */
-.testi-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow)}
-
-/* ══ REVEAL ══ */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
 .rv.in{opacity:1;transform:translateY(0)}
 
-/* ══ RESPONSIVE ══ */
 @media(max-width:960px){
   #hero{grid-template-columns:1fr;min-height:auto;padding-top:3rem}
   .h-right{flex-direction:row;flex-wrap:wrap;justify-content:center}
@@ -605,14 +436,14 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
   <div class="nicho-inner">
     <span class="nicho-label">Trabajo con</span>
     <div class="nicho-items">
-      <span class="nicho-item">🍕 Restaurantes</span>
-      <span class="nicho-item">💪 Gimnasios</span>
-      <span class="nicho-item">✂️ Peluquerías</span>
-      <span class="nicho-item">🏠 Inmobiliarias</span>
-      <span class="nicho-item">🦷 Clínicas</span>
-      <span class="nicho-item">🛍️ Tiendas</span>
-      <span class="nicho-item">🏖️ Turismo</span>
-      <span class="nicho-item">⚡ Y más</span>
+      <span class="nicho-item">Restaurantes</span>
+      <span class="nicho-item">Gimnasios</span>
+      <span class="nicho-item">Peluquerías</span>
+      <span class="nicho-item">Inmobiliarias</span>
+      <span class="nicho-item">Clínicas</span>
+      <span class="nicho-item">Tiendas</span>
+      <span class="nicho-item">Turismo</span>
+      <span class="nicho-item">Y más</span>
     </div>
   </div>
 </div>
@@ -623,11 +454,67 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
   <h2 class="sec-title rv">Lo que puedo hacer<br>por tu negocio.</h2>
   <p class="sec-sub rv">Precio cerrado antes de empezar. Sin sorpresas.</p>
   <div class="srv-list rv">
-    <div class="srv-row"><div class="srv-ico">🌐</div><div class="srv-info"><div class="srv-name">Web profesional</div><div class="srv-desc">Diseño a medida, rápida, en Google y adaptada al móvil. Lista en 7 días.</div></div><span class="srv-price">Desde 300€</span></div>
-    <div class="srv-row"><div class="srv-ico">🛒</div><div class="srv-info"><div class="srv-name">Tienda online</div><div class="srv-desc">Ecommerce con pagos seguros y gestión de productos. Tu negocio abierto 24/7.</div></div><span class="srv-price">Desde 600€</span></div>
-    <div class="srv-row"><div class="srv-ico">📅</div><div class="srv-info"><div class="srv-name">Sistema de reservas</div><div class="srv-desc">Que tus clientes reserven directamente desde la web. Sin llamadas ni WhatsApp a deshora.</div></div><span class="srv-price">Desde 400€</span></div>
-    <div class="srv-row"><div class="srv-ico">📍</div><div class="srv-info"><div class="srv-name">SEO local</div><div class="srv-desc">Aparece en Google cuando buscan tu negocio en tu ciudad. Más visibilidad, más clientes.</div></div><span class="srv-price">Desde 150€</span></div>
-    <div class="srv-row"><div class="srv-ico">🔧</div><div class="srv-info"><div class="srv-name">Mantenimiento mensual</div><div class="srv-desc">Tu web siempre actualizada y segura. Tú a lo tuyo, yo al código.</div></div><span class="srv-price">30€/mes</span></div>
+
+    <!-- Web profesional — Globe -->
+    <div class="srv-row">
+      <div class="srv-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="srv-info">
+        <div class="srv-name">Web profesional</div>
+        <div class="srv-desc">Diseño a medida, rápida, en Google y adaptada al móvil. Lista en 7 días.</div>
+      </div>
+      <span class="srv-price">Desde 300€</span>
+    </div>
+
+    <!-- Tienda online — ShoppingBag -->
+    <div class="srv-row">
+      <div class="srv-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </div>
+      <div class="srv-info">
+        <div class="srv-name">Tienda online</div>
+        <div class="srv-desc">Ecommerce con pagos seguros y gestión de productos. Tu negocio abierto 24/7.</div>
+      </div>
+      <span class="srv-price">Desde 600€</span>
+    </div>
+
+    <!-- Reservas — Calendar -->
+    <div class="srv-row">
+      <div class="srv-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <div class="srv-info">
+        <div class="srv-name">Sistema de reservas</div>
+        <div class="srv-desc">Que tus clientes reserven directamente desde la web. Sin llamadas ni WhatsApp a deshora.</div>
+      </div>
+      <span class="srv-price">Desde 400€</span>
+    </div>
+
+    <!-- SEO local — MapPin -->
+    <div class="srv-row">
+      <div class="srv-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="srv-info">
+        <div class="srv-name">SEO local</div>
+        <div class="srv-desc">Aparece en Google cuando buscan tu negocio en tu ciudad. Más visibilidad, más clientes.</div>
+      </div>
+      <span class="srv-price">Desde 150€</span>
+    </div>
+
+    <!-- Mantenimiento — Wrench -->
+    <div class="srv-row">
+      <div class="srv-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <div class="srv-info">
+        <div class="srv-name">Mantenimiento mensual</div>
+        <div class="srv-desc">Tu web siempre actualizada y segura. Tú a lo tuyo, yo al código.</div>
+      </div>
+      <span class="srv-price">30€/mes</span>
+    </div>
+
   </div>
 </div>
 
@@ -701,46 +588,38 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
   <p class="eyebrow rv">03 — Cómo trabajo</p>
   <h2 class="sec-title rv">Sencillo y sin complicaciones.</h2>
   <p class="sec-sub rv">No necesitas saber de tecnología. Me encargo de todo.</p>
-
-  <!-- Desktop -->
   <div class="proc-grid rv">
     <div class="proc-step"><div class="proc-num">01</div><div class="proc-title">Hablamos</div><div class="proc-desc">Me cuentas tu negocio. En 24 horas tienes presupuesto cerrado, sin sorpresas.</div></div>
     <div class="proc-step"><div class="proc-num">02</div><div class="proc-title">Diseño</div><div class="proc-desc">Creo el diseño y te lo muestro antes de programar. Si algo no te convence, lo cambiamos.</div></div>
     <div class="proc-step"><div class="proc-num">03</div><div class="proc-title">Desarrollo</div><div class="proc-desc">Programo tu web en 7 días. Rápida, optimizada para Google y perfecta en móvil.</div></div>
     <div class="proc-step"><div class="proc-num">04</div><div class="proc-title">Lanzamos</div><div class="proc-desc">Tu web online. Te explico cómo funciona y estoy disponible si necesitas algo.</div></div>
   </div>
-
-  <!-- Móvil: acordeón -->
   <div class="proc-accordion rv">
     <div class="proc-acc-item open">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">01</span>
-        <span class="proc-acc-title">Hablamos</span>
-        <span class="proc-acc-chevron">▼</span>
+        <span class="proc-acc-title">Hablamos</span><span class="proc-acc-chevron">▼</span>
       </div>
       <div class="proc-acc-body"><p class="proc-acc-text">Me cuentas tu negocio. En 24 horas tienes presupuesto cerrado, sin sorpresas.</p></div>
     </div>
     <div class="proc-acc-item">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">02</span>
-        <span class="proc-acc-title">Diseño</span>
-        <span class="proc-acc-chevron">▼</span>
+        <span class="proc-acc-title">Diseño</span><span class="proc-acc-chevron">▼</span>
       </div>
       <div class="proc-acc-body"><p class="proc-acc-text">Creo el diseño y te lo muestro antes de programar. Si algo no te convence, lo cambiamos.</p></div>
     </div>
     <div class="proc-acc-item">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">03</span>
-        <span class="proc-acc-title">Desarrollo</span>
-        <span class="proc-acc-chevron">▼</span>
+        <span class="proc-acc-title">Desarrollo</span><span class="proc-acc-chevron">▼</span>
       </div>
       <div class="proc-acc-body"><p class="proc-acc-text">Programo tu web en 7 días. Rápida, optimizada para Google y perfecta en móvil.</p></div>
     </div>
     <div class="proc-acc-item">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">04</span>
-        <span class="proc-acc-title">Lanzamos</span>
-        <span class="proc-acc-chevron">▼</span>
+        <span class="proc-acc-title">Lanzamos</span><span class="proc-acc-chevron">▼</span>
       </div>
       <div class="proc-acc-body"><p class="proc-acc-text">Tu web online. Te explico cómo funciona y estoy disponible si necesitas algo más.</p></div>
     </div>
@@ -841,8 +720,6 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
           <a href="#" class="ct-link">GitHub — @alejandrodev</a>
         </div>
       </div>
-
-      <!-- FORMULARIO REAL con Formspree -->
       <form class="cf" action="https://formspree.io/f/xgodrjyr" method="POST" onsubmit="handleSend(event)">
         <div class="cf-row">
           <div>
@@ -859,7 +736,6 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
         <div class="cf-label">¿Qué quieres conseguir?</div>
         <textarea name="mensaje" placeholder="Cuéntame sobre tu negocio y qué quieres lograr con la web..."></textarea>
         <input type="hidden" name="_subject" value="Nuevo presupuesto desde alejandrodev.es">
-        <input type="hidden" name="_next" value="https://alejandrodev.es#gracias">
         <button type="submit" class="btn-send" id="sendBtn">Enviar y recibir presupuesto →</button>
         <p class="form-note">Sin compromiso · Respondo en menos de 24 horas</p>
       </form>
@@ -880,7 +756,6 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
 </footer>
 
 <script>
-// ── Scroll reveal
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i * 60);
@@ -888,7 +763,6 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.rv').forEach(el => obs.observe(el));
 
-// ── FAQ accordion
 function toggleFaq(header) {
   const item = header.closest('.faq-item');
   const wasOpen = item.classList.contains('open');
@@ -896,7 +770,6 @@ function toggleFaq(header) {
   if (!wasOpen) item.classList.add('open');
 }
 
-// ── Proceso accordion (móvil)
 function toggleAcc(header) {
   const item = header.closest('.proc-acc-item');
   const wasOpen = item.classList.contains('open');
@@ -904,22 +777,18 @@ function toggleAcc(header) {
   if (!wasOpen) item.classList.add('open');
 }
 
-// ── Formulario
 async function handleSend(e) {
   e.preventDefault();
   const btn = document.getElementById('sendBtn');
   const form = e.target;
-
   btn.textContent = 'Enviando...';
   btn.disabled = true;
-
   try {
     const response = await fetch(form.action, {
       method: 'POST',
       body: new FormData(form),
       headers: { 'Accept': 'application/json' }
     });
-
     if (response.ok) {
       btn.textContent = '✓ Enviado — te respondo antes de 24h';
       btn.style.background = '#2C3B2D';
@@ -929,9 +798,7 @@ async function handleSend(e) {
         btn.style.background = '';
         btn.disabled = false;
       }, 4000);
-    } else {
-      throw new Error();
-    }
+    } else { throw new Error(); }
   } catch {
     btn.textContent = 'Error al enviar — inténtalo de nuevo';
     btn.style.background = '#c0392b';
@@ -939,7 +806,6 @@ async function handleSend(e) {
   }
 }
 
-// ── Smooth scroll nav links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href').slice(1);
