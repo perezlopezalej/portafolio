@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alejandro Pérez · Webs para negocios locales en Andalucía</title>
-<meta name="description" content="Full Stack Developer en Conil de la Frontera. Hago webs para negocios de Andalucía que quieren más clientes. Desde 300€, entrega en 7 días, respuesta en 24h.">
-<meta name="keywords" content="diseño web Conil, páginas web negocios locales Andalucía, desarrollador web Cádiz, crear web barata profesional">
+<title>Alejandro Pérez · Desarrollador Web Full Stack — Webs que generan negocio</title>
+<meta name="description" content="Desarrollador web full stack en Cádiz. Diseño y desarrollo webs, e-commerce, sistemas de reservas y apps web que traen clientes reales. Proyectos desde 800€.">
+<meta name="keywords" content="desarrollador web freelance Cádiz, diseño web profesional Andalucía, full stack developer, crear web empresa, landing page profesional, sistema reservas online">
 <meta name="author" content="Alejandro Pérez López">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://alejandrodev.es">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alejandrodev.es">
-<meta property="og:title" content="Alejandro Pérez · Webs para negocios locales en Andalucía">
-<meta property="og:description" content="Hago webs para negocios de Andalucía. Desde 300€. Entrega en 7 días. Respuesta en 24h.">
+<meta property="og:title" content="Alejandro Pérez · Webs que generan negocio">
+<meta property="og:description" content="Desarrollador web full stack. Webs profesionales, e-commerce y apps web que traen clientes reales.">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alejandro Pérez · Webs para negocios locales">
-<meta name="twitter:description" content="Hago webs para negocios de Andalucía. Desde 300€. Entrega en 7 días.">
+<meta name="twitter:title" content="Alejandro Pérez · Desarrollador Web Full Stack">
+<meta name="twitter:description" content="Webs, e-commerce y apps web que generan negocio real. Cádiz, Andalucía.">
 
 <script type="application/ld+json">
 {
@@ -39,11 +39,10 @@
       "@type": "LocalBusiness",
       "@id": "https://alejandrodev.es/#business",
       "name": "Alejandro Pérez · Desarrollo Web",
-      "description": "Diseño y desarrollo de webs para negocios locales en Andalucía. Desde 300€.",
+      "description": "Diseño y desarrollo de webs profesionales, e-commerce y apps web para empresas y negocios.",
       "url": "https://alejandrodev.es",
-      "telephone": "+34600000000",
       "email": "perezlopezalej@gmail.com",
-      "priceRange": "€€",
+      "priceRange": "€€€",
       "areaServed": ["Conil de la Frontera","Cádiz","Andalucía","España"],
       "address": {
         "@type": "PostalAddress",
@@ -90,8 +89,6 @@
 html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--ink);font-family:var(--FB);overflow-x:hidden}
 
-body::before{display:none}
-
 nav{position:sticky;top:0;z-index:200;background:rgba(242,237,215,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--rule);padding:0 clamp(1rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;height:60px;transition:box-shadow .3s ease}
 nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transparent}
 .n-logo{font-family:var(--FH);font-size:1.2rem;font-weight:700;color:var(--olive);text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
@@ -128,9 +125,6 @@ nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transpa
 .h-stat-divider{width:1px;height:48px;background:var(--rule);flex-shrink:0;align-self:center}
 
 .h-right{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:1rem}
-.h-avatar{width:200px;height:200px;border-radius:50%;background:var(--olive);display:flex;align-items:center;justify-content:center;font-family:var(--FH);font-size:4.5rem;font-weight:700;color:rgba(242,237,215,.35);border:5px solid var(--cream2);box-shadow:var(--shadow-lg);position:relative;overflow:hidden;flex-shrink:0;}
-.h-avatar::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 35% 35%,rgba(212,133,90,.18),transparent 60%)}
-.h-avatar-hint{position:absolute;bottom:0;left:0;right:0;background:rgba(44,59,45,.75);backdrop-filter:blur(4px);font-size:.65rem;font-weight:600;color:var(--cream);text-align:center;padding:.4rem;letter-spacing:.06em;text-transform:uppercase;}
 .h-avail{display:inline-flex;align-items:center;gap:8px;background:var(--olive);color:var(--cream);font-size:.78rem;font-weight:600;padding:.55rem 1.25rem;border-radius:100px;letter-spacing:.02em;}
 .h-avail::before{content:'';width:7px;height:7px;border-radius:50%;background:#6FCF97;flex-shrink:0;animation:pulse 2s ease-in-out infinite}
 .h-testi{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;width:100%;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition);border-left:3px solid var(--terra);}
@@ -158,50 +152,56 @@ nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transpa
 .sec-title{font-family:var(--FH);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.05;margin-bottom:.5rem;color:var(--ink)}
 .sec-sub{font-size:.95rem;color:var(--muted);line-height:1.65;max-width:520px}
 
-/* ══ SERVICIOS — iconos SVG ══ */
-.srv-list{margin-top:3rem;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--rule)}
-.srv-row{display:grid;grid-template-columns:44px 1fr auto;gap:0 1.5rem;align-items:center;padding:1.5rem 1.5rem;border-bottom:1px solid var(--rule);cursor:pointer;transition:padding-left var(--transition),background var(--transition),border-color var(--transition);position:relative;background:#fff;}
-.srv-row::after{content:'→';position:absolute;right:1.5rem;font-size:1.1rem;color:var(--soft);transition:right var(--transition),color var(--transition),transform var(--transition),opacity var(--transition);opacity:0;}
-.srv-row:hover{box-shadow:inset 3px 0 0 var(--terra);background:rgba(212,133,90,.04);}
-.srv-row:hover::after{right:1.25rem;color:var(--terra);transform:translateX(4px);opacity:1}
-.srv-row:last-child{border-bottom:none}
-.srv-row:hover .srv-name{color:var(--terra)}
-.srv-row:hover .srv-price{color:var(--terra)}
-.srv-ico{
-  width:44px;height:44px;border-radius:var(--radius-sm);
-  background:rgba(44,59,45,.06);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-  color:var(--olive3);
-  transition:background var(--transition),transform var(--transition),color var(--transition);
-}
+/* ══ SERVICIOS — grid cards ══ */
+.srv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;margin-top:3rem;border:1px solid var(--rule);border-radius:var(--radius-md);overflow:hidden;background:var(--rule)}
+.srv-card{display:flex;flex-direction:column;gap:.4rem;padding:1.75rem;background:#fff;transition:background var(--transition)}
+.srv-card:hover{background:rgba(212,133,90,.03)}
+.srv-card:hover .srv-card-name{color:var(--terra)}
+.srv-card:hover .srv-ico{background:var(--t2);transform:scale(1.08) rotate(-3deg);color:var(--terra)}
+.srv-card .srv-ico{transition:background var(--transition),transform var(--transition),color var(--transition);margin-bottom:.25rem}
+.srv-card-name{font-family:var(--FH);font-size:1.1rem;font-weight:600;letter-spacing:-.01em;color:var(--ink);transition:color var(--transition)}
+.srv-card-desc{font-size:.83rem;color:var(--muted);line-height:1.55}
+.srv-card-price{font-family:var(--FH);font-size:1.15rem;font-weight:700;color:var(--terra);margin-top:auto;padding-top:.85rem;border-top:1px solid var(--rule)}
+.srv-ico{width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(44,59,45,.06);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--olive3);}
 .srv-ico svg{width:20px;height:20px;flex-shrink:0}
-.srv-row:hover .srv-ico{background:var(--t2);transform:scale(1.1) rotate(-3deg);color:var(--terra);}
-.srv-name{font-family:var(--FH);font-size:1.1rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.2rem;color:var(--ink);transition:color var(--transition)}
-.srv-desc{font-size:.83rem;color:var(--muted);line-height:1.5;transition:color var(--transition)}
-.srv-price{font-family:var(--FH);font-size:1.05rem;font-weight:700;color:var(--terra);white-space:nowrap;margin-right:2.5rem;transition:color var(--transition)}
 
+/* ══ PROYECTOS ══ */
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:3rem}
-.proj-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition),background var(--transition);}
+.proj-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);}
 .proj-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--terra)}
 .proj-card:hover .proj-name{color:var(--terra)}
-.proj-thumb{height:260px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+.proj-thumb{height:220px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
 .proj-result{position:absolute;top:12px;right:12px;background:var(--terra);color:#fff;font-size:.7rem;font-weight:700;padding:.3rem .8rem;border-radius:100px;letter-spacing:.02em}
 .proj-body{padding:1.5rem}
-.proj-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:.75rem}
+.proj-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:.85rem}
 .ptag{font-size:.72rem;font-weight:600;padding:.2rem .6rem;border-radius:4px;background:rgba(44,59,45,.06);color:var(--olive3);border:1px solid rgba(44,59,45,.1)}
-.proj-name{font-family:var(--FH);font-size:1.2rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.4rem}
-.proj-desc{font-size:.85rem;color:var(--muted);line-height:1.6;margin-bottom:1rem}
-.proj-link{font-size:.82rem;font-weight:600;color:var(--terra);text-decoration:none;display:inline-flex;align-items:center;gap:5px;transition:gap var(--transition)}
+.proj-name{font-family:var(--FH);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.75rem;transition:color var(--transition)}
+.proj-meta{display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.1rem}
+.proj-meta-row{display:flex;gap:.5rem;align-items:flex-start}
+.proj-meta-label{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--terra);white-space:nowrap;padding-top:.05rem;min-width:68px}
+.proj-meta-text{font-size:.83rem;color:var(--muted);line-height:1.5}
+.proj-link{font-size:.82rem;font-weight:600;color:var(--terra);text-decoration:none;display:inline-flex;align-items:center;gap:5px;transition:gap var(--transition);border-top:1px solid var(--rule);padding-top:1rem;width:100%}
 .proj-link:hover{gap:10px}
 
+/* ══ VALOR ══ */
+.val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:3rem}
+.val-card{padding:2rem 1.75rem;border:1px solid var(--rule);border-radius:var(--radius-lg);background:#fff;transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);}
+.val-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--terra)}
+.val-card:hover .val-title{color:var(--terra)}
+.val-card:hover .val-ico{background:var(--t2);color:var(--terra);transform:scale(1.08) rotate(-3deg)}
+.val-ico{width:48px;height:48px;border-radius:var(--radius-sm);background:rgba(44,59,45,.06);display:flex;align-items:center;justify-content:center;color:var(--olive3);margin-bottom:1.1rem;transition:background var(--transition),color var(--transition),transform var(--transition)}
+.val-ico svg{width:22px;height:22px}
+.val-title{font-family:var(--FH);font-size:1.15rem;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin-bottom:.4rem;transition:color var(--transition)}
+.val-desc{font-size:.85rem;color:var(--muted);line-height:1.6}
+
+/* ══ PROCESO ══ */
 .proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;position:relative}
+.proc-grid::before{content:'';position:absolute;top:3.25rem;left:1.25rem;right:1.25rem;height:1px;background:linear-gradient(to right,transparent,var(--rule) 8%,var(--rule) 92%,transparent);pointer-events:none}
 .proc-step{padding:1.75rem 1.25rem;border-left:2px solid var(--rule);position:relative;transition:border-color .2s,background .2s;border-radius:0 8px 8px 0}
 .proc-step:hover{border-color:var(--terra);background:rgba(212,133,90,.05)}
 .proc-step:hover .proc-title{color:var(--terra)}
 .proc-num{font-family:var(--FH);font-size:4rem;font-weight:700;color:var(--t2);line-height:1;margin-bottom:.5rem;transition:color .2s}
 .proc-step:hover .proc-num{color:var(--t3)}
-.proc-icon{font-size:1.4rem;margin-bottom:.6rem}
 .proc-title{font-family:var(--FH);font-size:1.1rem;font-weight:600;margin-bottom:.4rem;transition:color .2s}
 .proc-desc{font-size:.83rem;color:var(--muted);line-height:1.6}
 
@@ -211,17 +211,17 @@ nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transpa
 .proc-acc-header{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;cursor:pointer;user-select:none;transition:background var(--transition)}
 .proc-acc-header:hover{background:rgba(212,133,90,.06)}
 .proc-acc-num{font-family:var(--FH);font-size:1.5rem;font-weight:700;color:var(--olive3);width:28px;flex-shrink:0;line-height:1}
-.proc-acc-ico{font-size:1.2rem}
 .proc-acc-title{font-family:var(--FH);font-size:1rem;font-weight:600;flex:1;transition:color var(--transition)}
 .proc-acc-header:hover .proc-acc-title{color:var(--terra)}
 .proc-acc-chevron{color:var(--muted);font-size:.75rem;transition:transform var(--transition);flex-shrink:0}
 .proc-acc-item.open .proc-acc-chevron{transform:rotate(180deg)}
 .proc-acc-body{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
 .proc-acc-item.open .proc-acc-body{max-height:300px;padding:0 1.25rem 1rem}
-.proc-acc-text{font-size:.85rem;color:var(--muted);line-height:1.65;padding-left:calc(28px + 1rem + 1.2rem + 1rem)}
+.proc-acc-text{font-size:.85rem;color:var(--muted);line-height:1.65;padding-left:calc(28px + 1rem + 1rem)}
 
+/* ══ TESTIMONIOS ══ */
 .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:3rem}
-.testi-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition),background var(--transition);}
+.testi-card{background:#fff;border:1px solid var(--rule);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);}
 .testi-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--terra)}
 .testi-stars{color:var(--terra);font-size:.85rem;margin-bottom:.85rem;letter-spacing:.06em}
 .testi-text{font-family:var(--FH);font-size:1rem;font-style:italic;font-weight:500;color:var(--ink);line-height:1.6;margin-bottom:1.25rem}
@@ -230,11 +230,12 @@ nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transpa
 .testi-name{font-size:.88rem;font-weight:600;color:var(--olive)}
 .testi-biz{font-size:.72rem;color:var(--muted)}
 
+/* ══ SOBRE MÍ ══ */
 .about-grid{display:grid;grid-template-columns:300px 1fr;gap:4rem;align-items:center}
 .about-photo{width:300px;height:360px;border-radius:var(--radius-lg);background:var(--olive);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow-lg);flex-shrink:0;}
 .about-photo::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 35% 25%,rgba(212,133,90,.2),transparent 60%)}
-.about-photo-letters{font-family:var(--FH);font-size:7rem;font-weight:700;color:rgba(242,237,215,.12);line-height:1;position:relative;z-index:1}
-.about-photo-label{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--olive);color:var(--cream);font-size:.7rem;font-weight:700;padding:.4rem .95rem;border-radius:100px;letter-spacing:.04em;white-space:nowrap}
+.about-photo-letters{font-family:var(--FH);font-size:7rem;font-weight:700;color:rgba(242,237,215,.18);line-height:1;position:relative;z-index:1;letter-spacing:-.05em}
+.about-photo-label{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--terra);color:#fff;font-size:.7rem;font-weight:700;padding:.4rem .95rem;border-radius:100px;letter-spacing:.04em;white-space:nowrap}
 .about-photo-hint{position:absolute;top:1rem;left:50%;transform:translateX(-50%);background:rgba(44,59,45,.7);backdrop-filter:blur(4px);color:rgba(242,237,215,.7);font-size:.7rem;padding:.35rem .8rem;border-radius:100px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 .about-name{font-family:var(--FH);font-size:2.2rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem;line-height:1.05}
 .about-role{font-size:.8rem;font-weight:600;color:var(--olive3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem}
@@ -244,6 +245,7 @@ nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transpa
 .chip{font-size:.75rem;font-weight:500;padding:.35rem .85rem;border-radius:100px;background:var(--cream2);color:var(--olive3);border:1px solid var(--rule);transition:background .15s,border-color .15s,color .15s;cursor:default}
 .chip:hover{background:var(--olive);color:var(--cream);border-color:var(--olive)}
 
+/* ══ FAQ ══ */
 .faq-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:.6rem}
 .faq-item{background:var(--cream);border:1px solid var(--rule);border-radius:var(--radius-sm);overflow:hidden;transition:border-color var(--transition)}
 .faq-item:hover{border-color:var(--terra)}
@@ -257,6 +259,21 @@ nav.scrolled{box-shadow:0 2px 24px rgba(44,59,45,.1);border-bottom-color:transpa
 .faq-item.open .faq-body{max-height:600px}
 .faq-a{font-size:.88rem;color:var(--muted);line-height:1.7;padding:0 1.35rem 1.1rem}
 
+/* ══ DISRUPTOR ══ */
+.disruptor{background:var(--olive);position:relative;z-index:1;overflow:hidden}
+.disruptor::before{content:'';position:absolute;top:-80px;right:-80px;width:360px;height:360px;border-radius:50%;background:rgba(212,133,90,.18);pointer-events:none}
+.disruptor-inner{max-width:1200px;margin:0 auto;padding:5rem clamp(1rem,4vw,3rem);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.disruptor-label{font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,237,215,.3);display:flex;align-items:center;gap:8px;margin-bottom:1.5rem}
+.disruptor-label::before{content:'';width:20px;height:1px;background:rgba(242,237,215,.3);flex-shrink:0}
+.disruptor-quote{font-family:var(--FH);font-size:clamp(1.75rem,3vw,2.5rem);font-weight:600;font-style:normal;color:var(--cream);line-height:1.2;letter-spacing:-.02em;margin-bottom:2.5rem;border:none;padding:0}
+.disruptor-quote em{font-style:italic;color:var(--terra)}
+.disruptor-right{display:flex;flex-direction:column;gap:0;border-left:1px solid rgba(242,237,215,.1);padding-left:3rem}
+.disruptor-stat{padding:1.5rem 0;border-bottom:1px solid rgba(242,237,215,.08)}
+.disruptor-stat:last-child{border-bottom:none}
+.ds-n{font-family:var(--FH);font-size:2.5rem;font-weight:700;color:var(--terra);letter-spacing:-.03em;line-height:1;display:block;margin-bottom:.3rem}
+.ds-l{font-size:.85rem;color:rgba(242,237,215,.45);line-height:1.5;display:block}
+
+/* ══ CONTACTO ══ */
 #contacto{background:var(--olive);position:relative;z-index:1;padding:5rem clamp(1rem,4vw,3rem)}
 .ct-inner{max-width:1200px;margin:0 auto}
 .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
@@ -284,6 +301,20 @@ textarea{min-height:110px;resize:none}
 .btn-send:active{transform:translateY(0)}
 .form-note{font-size:.72rem;color:rgba(242,237,215,.3);text-align:center;margin-top:.75rem}
 
+/* ══ OUTLINE BTN ══ */
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--terra);font-family:var(--FB);font-size:.95rem;font-weight:600;padding:.9rem 1.85rem;border-radius:8px;text-decoration:none;border:1.5px solid var(--terra);cursor:pointer;transition:transform .15s,background .15s,color .15s,box-shadow .15s}
+.btn-outline:hover{background:var(--terra);color:#fff;transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,133,90,.35)}
+
+/* ══ DEVICE MOCKUP ══ */
+.h-device{width:100%;background:var(--olive);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid rgba(44,59,45,.3)}
+.h-device-bar{background:var(--olive2);padding:.55rem .85rem;display:flex;align-items:center;gap:.35rem}
+.h-device-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.h-device-url{flex:1;text-align:center;font-size:.63rem;color:rgba(242,237,215,.3);font-family:var(--FB);background:rgba(242,237,215,.05);border-radius:4px;padding:.2rem .5rem;margin:0 .5rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.h-device-screen{overflow:hidden;aspect-ratio:16/10}
+.h-device-screen img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform 6s ease}
+.h-device:hover .h-device-screen img{transform:translateY(-15%)}
+
+/* ══ WHATSAPP ══ */
 .wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:500;display:inline-flex;align-items:center;justify-content:flex-start;gap:.65rem;background:#25D366;color:#fff;border-radius:100px;padding:.8rem 1.4rem .8rem .9rem;box-shadow:0 6px 28px rgba(37,211,102,.4);text-decoration:none;font-size:.85rem;font-weight:600;transition:transform .2s,box-shadow .2s;animation:wapop .6s cubic-bezier(.34,1.56,.64,1) 1.5s both;}
 @keyframes wapop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
 .wa-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 36px rgba(37,211,102,.55)}
@@ -293,6 +324,7 @@ textarea{min-height:110px;resize:none}
 @keyframes waring{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.5}}
 .wa-txt{white-space:nowrap;line-height:1}
 
+/* ══ FOOTER ══ */
 footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);padding:1.5rem clamp(1rem,4vw,3rem);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;position:relative;z-index:1}
 .f-logo{font-family:var(--FH);font-size:1rem;font-weight:700;color:var(--cream)}
 .f-links{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
@@ -302,22 +334,11 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
 .f-cta:hover{color:var(--cream)!important}
 .f-right{font-size:.75rem;color:rgba(242,237,215,.3)}
 
-.disruptor{background:var(--olive);position:relative;z-index:1;overflow:hidden}
-.disruptor::before{content:'';position:absolute;top:-80px;right:-80px;width:360px;height:360px;border-radius:50%;background:rgba(212,133,90,.18);pointer-events:none}
-.disruptor-inner{max-width:1200px;margin:0 auto;padding:5rem clamp(1rem,4vw,3rem);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.disruptor-label{font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,237,215,.3);display:flex;align-items:center;gap:8px;margin-bottom:1.5rem}
-.disruptor-label::before{content:'';width:20px;height:1px;background:rgba(242,237,215,.3);flex-shrink:0}
-.disruptor-quote{font-family:var(--FH);font-size:clamp(1.75rem,3vw,2.5rem);font-weight:600;font-style:normal;color:var(--cream);line-height:1.2;letter-spacing:-.02em;margin-bottom:2.5rem;border:none;padding:0}
-.disruptor-quote em{font-style:italic;color:var(--terra)}
-.disruptor-right{display:flex;flex-direction:column;gap:0;border-left:1px solid rgba(242,237,215,.1);padding-left:3rem}
-.disruptor-stat{padding:1.5rem 0;border-bottom:1px solid rgba(242,237,215,.08)}
-.disruptor-stat:last-child{border-bottom:none}
-.ds-n{font-family:var(--FH);font-size:2.5rem;font-weight:700;color:var(--terra);letter-spacing:-.03em;line-height:1;display:block;margin-bottom:.3rem}
-.ds-l{font-size:.85rem;color:rgba(242,237,215,.45);line-height:1.5;display:block}
-
+/* ══ REVEAL ══ */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(0.16,1,0.3,1),transform .7s cubic-bezier(0.16,1,0.3,1)}
 .rv.in{opacity:1;transform:translateY(0)}
 
+/* ══ RESPONSIVE ══ */
 @media(max-width:960px){
   #hero{grid-template-columns:1fr;min-height:auto;padding-top:3rem}
   .h-right{flex-direction:column;align-items:stretch}
@@ -331,6 +352,7 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
   .disruptor-inner{grid-template-columns:1fr;gap:2.5rem}
   .disruptor-right{border-left:none;padding-left:0;border-top:1px solid rgba(242,237,215,.1);padding-top:2rem}
   .h-stat-big{font-size:2.5rem!important}
+  .val-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
   .n-links a:not(.n-cta){display:none}
@@ -338,75 +360,42 @@ footer{background:var(--olive);border-top:1px solid rgba(242,237,215,.08);paddin
   .h-proof{gap:1.25rem}
   .h-actions{flex-direction:column;align-items:stretch}
   .btn-primary,.btn-ghost{text-align:center;justify-content:center}
-  .srv-row{grid-template-columns:40px 1fr;gap:0 1rem}
-  .srv-price{display:none}
-  .srv-row::after{display:none}
   .cf-row{grid-template-columns:1fr}
   .wa-txt{display:none}
   .wa-float{padding:.9rem}
+  .val-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .nicho-items{flex-wrap:nowrap;overflow-x:auto;padding-bottom:.2rem;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .nicho-items::-webkit-scrollbar{display:none}
+  .nicho-item{flex-shrink:0}
+}
+@media(max-width:600px){
+  .testi-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:1rem;padding-bottom:.5rem;margin-top:2rem}
+  .testi-grid::-webkit-scrollbar{display:none}
+  .testi-card{min-width:280px;flex-shrink:0;scroll-snap-align:start}
 }
 @media(max-width:380px){
   .n-logo{font-size:1rem}
   .h-title{font-size:2.4rem}
 }
 
-#servicios,#proyectos,#sobre-mi,#contacto{scroll-margin-top:60px}
+#servicios,#proyectos,#valor,#sobre-mi,#contacto{scroll-margin-top:60px}
 :focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:4px}
 input:focus-visible,textarea:focus-visible{outline:none}
 @media(max-width:960px){.h-testi{box-shadow:var(--shadow)}}
-
-/* ══ DEVICE MOCKUP ══ */
-.h-device{width:100%;background:var(--olive);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid rgba(44,59,45,.3)}
-.h-device-bar{background:var(--olive2);padding:.55rem .85rem;display:flex;align-items:center;gap:.35rem}
-.h-device-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.h-device-url{flex:1;text-align:center;font-size:.63rem;color:rgba(242,237,215,.3);font-family:var(--FB);background:rgba(242,237,215,.05);border-radius:4px;padding:.2rem .5rem;margin:0 .5rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.h-device-screen{overflow:hidden;aspect-ratio:16/10}
-.h-device-screen img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform 6s ease}
-.h-device:hover .h-device-screen img{transform:translateY(-15%)}
-
-/* ══ OUTLINE BTN ══ */
-.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--terra);font-family:var(--FB);font-size:.95rem;font-weight:600;padding:.9rem 1.85rem;border-radius:8px;text-decoration:none;border:1.5px solid var(--terra);cursor:pointer;transition:transform .15s,background .15s,color .15s,box-shadow .15s}
-.btn-outline:hover{background:var(--terra);color:#fff;transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,133,90,.35)}
-
-/* ══ SERVICES GRID ══ */
-.srv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;margin-top:3rem;border:1px solid var(--rule);border-radius:var(--radius-md);overflow:hidden;background:var(--rule)}
-.srv-card{display:flex;flex-direction:column;gap:.4rem;padding:1.75rem;background:#fff;transition:background var(--transition)}
-.srv-card:hover{background:rgba(212,133,90,.03)}
-.srv-card:hover .srv-card-name{color:var(--terra)}
-.srv-card:hover .srv-ico{background:var(--t2);transform:scale(1.08) rotate(-3deg);color:var(--terra)}
-.srv-card .srv-ico{transition:background var(--transition),transform var(--transition),color var(--transition);margin-bottom:.25rem}
-.srv-card-name{font-family:var(--FH);font-size:1.1rem;font-weight:600;letter-spacing:-.01em;color:var(--ink);transition:color var(--transition)}
-.srv-card-desc{font-size:.83rem;color:var(--muted);line-height:1.55}
-.srv-card-price{font-family:var(--FH);font-size:1.15rem;font-weight:700;color:var(--terra);margin-top:auto;padding-top:.85rem;border-top:1px solid var(--rule)}
-
-/* ══ PROCESS CONNECTOR ══ */
-.proc-grid::before{content:'';position:absolute;top:3.25rem;left:1.25rem;right:1.25rem;height:1px;background:linear-gradient(to right,transparent,var(--rule) 8%,var(--rule) 92%,transparent);pointer-events:none}
-
-/* ══ MOBILE NICHO SCROLL ══ */
-@media(max-width:600px){
-  .nicho-items{flex-wrap:nowrap;overflow-x:auto;padding-bottom:.2rem;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .nicho-items::-webkit-scrollbar{display:none}
-  .nicho-item{flex-shrink:0}
-}
-
-/* ══ MOBILE TESTI CAROUSEL ══ */
-@media(max-width:600px){
-  .testi-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:1rem;padding-bottom:.5rem;margin-top:2rem}
-  .testi-grid::-webkit-scrollbar{display:none}
-  .testi-card{min-width:280px;flex-shrink:0;scroll-snap-align:start}
-}
 </style>
 </head>
 <body>
 
 <!-- ══ WHATSAPP FLOTANTE ══ -->
-<a href="https://wa.me/34600000000?text=Hola%20Alejandro%2C%20me%20interesa%20una%20web%20para%20mi%20negocio"
+<a href="https://wa.me/34600000000?text=Hola%20Alejandro%2C%20me%20interesa%20hablar%20sobre%20un%20proyecto%20web"
    class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <div class="wa-icon-wrap">
     <span class="wa-icon">💬</span>
     <span class="wa-pulse"></span>
   </div>
-  <span class="wa-txt">Escríbeme por WhatsApp</span>
+  <span class="wa-txt">Hablemos por WhatsApp</span>
 </a>
 
 <!-- ══ NAV ══ -->
@@ -416,7 +405,7 @@ input:focus-visible,textarea:focus-visible{outline:none}
     <a href="#servicios">Servicios</a>
     <a href="#proyectos">Proyectos</a>
     <a href="#sobre-mi">Sobre mí</a>
-    <a href="#contacto" class="n-cta">Pide presupuesto</a>
+    <a href="#contacto" class="n-cta">Contratar →</a>
   </div>
 </nav>
 
@@ -424,26 +413,26 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <section>
 <div id="hero">
   <div>
-    <p class="h-tag rv">Webs para negocios · Cádiz y Andalucía</p>
+    <p class="h-tag rv">Full Stack Developer · Cádiz, Andalucía</p>
     <h1 class="h-title rv">
-      Hago webs que<br>
-      <em>traen clientes</em><br>
-      a tu <span class="hl">negocio.</span>
+      Webs que hacen<br>
+      <em>crecer tu negocio.</em><br>
+      <span class="hl">De verdad.</span>
     </h1>
     <p class="h-sub rv">
-      Si tienes un negocio en Andalucía y quieres <b>más clientes desde internet</b>, puedo ayudarte. Webs profesionales, rápidas y que funcionan — desde 300€ y listas en 7 días.
+      Diseño y desarrollo webs, apps y sistemas a medida para negocios que quieren <b>más clientes, más ventas y más visibilidad</b> — sin depender de terceros ni perder tiempo.
     </p>
     <div class="h-actions rv">
-      <a href="#contacto" class="btn-primary">Pide presupuesto gratis →</a>
-      <a href="#proyectos" class="btn-ghost">Ver mis webs</a>
+      <a href="#contacto" class="btn-primary">Hablar de mi proyecto →</a>
+      <a href="#proyectos" class="btn-ghost">Ver proyectos</a>
     </div>
     <div class="h-proof rv">
       <div class="h-stat-main">
-        <div class="h-stat-n h-stat-big">300<span>€</span></div>
-        <div class="h-stat-l">Precio inicial</div>
+        <div class="h-stat-n h-stat-big">10<span>+</span></div>
+        <div class="h-stat-l">Proyectos entregados</div>
       </div>
       <div class="h-stat-divider"></div>
-      <div><div class="h-stat-n">7<span>d</span></div><div class="h-stat-l">Entrega media</div></div>
+      <div><div class="h-stat-n">14<span>d</span></div><div class="h-stat-l">Entrega media</div></div>
       <div><div class="h-stat-n">&lt;24<span>h</span></div><div class="h-stat-l">Respuesta</div></div>
       <div><div class="h-stat-n">0<span>€</span></div><div class="h-stat-l">Costes ocultos</div></div>
     </div>
@@ -458,14 +447,14 @@ input:focus-visible,textarea:focus-visible{outline:none}
         <span class="h-device-url">tierra-blanca-demo.vercel.app</span>
       </div>
       <div class="h-device-screen">
-        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Demo web Tierra Blanca">
+        <img src="tierra-blanca-mockup.png" alt="Demo web Tierra Blanca — Restaurante" onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop'">
       </div>
     </div>
     <div class="h-testi">
       <div class="h-testi-quote">"</div>
       <p class="h-testi-text">La web nos trajo 3 clientes nuevos el primer mes. No me lo podía creer, la verdad.</p>
       <div class="h-testi-author">
-        <div class="h-testi-av" style="background:none;overflow:hidden;padding:0"><img src="https://i.pravatar.cc/80?img=47" alt="María García" style="width:100%;height:100%;object-fit:cover;border-radius:50%"></div>
+        <div class="h-testi-av">MG</div>
         <div>
           <div class="h-testi-name">María García</div>
           <div class="h-testi-biz">La Tasca del Puerto · Conil</div>
@@ -483,13 +472,13 @@ input:focus-visible,textarea:focus-visible{outline:none}
     <span class="nicho-label">Trabajo con</span>
     <div class="nicho-items">
       <span class="nicho-item">Restaurantes</span>
-      <span class="nicho-item">Gimnasios</span>
-      <span class="nicho-item">Peluquerías</span>
-      <span class="nicho-item">Inmobiliarias</span>
+      <span class="nicho-item">Startups</span>
       <span class="nicho-item">Clínicas</span>
-      <span class="nicho-item">Tiendas</span>
+      <span class="nicho-item">E-commerce</span>
+      <span class="nicho-item">Inmobiliarias</span>
       <span class="nicho-item">Turismo</span>
-      <span class="nicho-item">Y más</span>
+      <span class="nicho-item">SaaS</span>
+      <span class="nicho-item">Profesionales</span>
     </div>
   </div>
 </div>
@@ -497,53 +486,44 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <!-- ══ SERVICIOS ══ -->
 <div class="section" id="servicios">
   <p class="eyebrow rv">01 — Servicios</p>
-  <h2 class="sec-title rv">Lo que puedo hacer<br>por tu negocio.</h2>
-  <p class="sec-sub rv">Precio cerrado antes de empezar. Sin sorpresas.</p>
+  <h2 class="sec-title rv">Soluciones web que<br>generan resultados.</h2>
+  <p class="sec-sub rv">Precio cerrado antes de empezar. Sin sorpresas ni presupuestos que se disparan.</p>
   <div class="srv-grid rv">
 
     <div class="srv-card">
       <div class="srv-ico">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
       </div>
-      <div class="srv-card-name">Web profesional</div>
-      <div class="srv-card-desc">Diseño a medida, rápida, en Google y adaptada al móvil. Lista en 7 días.</div>
-      <div class="srv-card-price">Desde 300€</div>
+      <div class="srv-card-name">Landing page / Web corporativa</div>
+      <div class="srv-card-desc">Diseño a medida que transmite autoridad, convierte visitas en leads y posiciona tu negocio por delante de la competencia.</div>
+      <div class="srv-card-price">Desde 800€</div>
     </div>
 
     <div class="srv-card">
       <div class="srv-ico">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
       </div>
-      <div class="srv-card-name">Tienda online</div>
-      <div class="srv-card-desc">Ecommerce con pagos seguros y gestión de productos. Tu negocio abierto 24/7.</div>
-      <div class="srv-card-price">Desde 600€</div>
+      <div class="srv-card-name">Tienda online / E-commerce</div>
+      <div class="srv-card-desc">Tu negocio abierto 24/7. Pagos seguros, gestión de stock y una experiencia de compra que convierte. Sin comisiones de plataformas.</div>
+      <div class="srv-card-price">Desde 1.500€</div>
     </div>
 
     <div class="srv-card">
       <div class="srv-ico">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       </div>
-      <div class="srv-card-name">Sistema de reservas</div>
-      <div class="srv-card-desc">Que tus clientes reserven directamente desde la web. Sin llamadas ni WhatsApp a deshora.</div>
-      <div class="srv-card-price">Desde 400€</div>
+      <div class="srv-card-name">Sistema de reservas / Citas</div>
+      <div class="srv-card-desc">Tus clientes reservan solos, a cualquier hora. Cero llamadas perdidas, cero WhatsApp a deshora. Confirmaciones automáticas incluidas.</div>
+      <div class="srv-card-price">Desde 1.000€</div>
     </div>
 
     <div class="srv-card">
       <div class="srv-ico">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
       </div>
-      <div class="srv-card-name">SEO local</div>
-      <div class="srv-card-desc">Aparece en Google cuando buscan tu negocio en tu ciudad. Más visibilidad, más clientes.</div>
-      <div class="srv-card-price">Desde 150€</div>
-    </div>
-
-    <div class="srv-card">
-      <div class="srv-ico">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-      </div>
-      <div class="srv-card-name">Mantenimiento mensual</div>
-      <div class="srv-card-desc">Tu web siempre actualizada y segura. Tú a lo tuyo, yo al código.</div>
-      <div class="srv-card-price">30€/mes</div>
+      <div class="srv-card-name">App web / Dashboard / SaaS</div>
+      <div class="srv-card-desc">Paneles de gestión, herramientas internas o productos SaaS completos. Full stack, escalables y listos para crecer contigo.</div>
+      <div class="srv-card-price">Desde 1.500€</div>
     </div>
 
   </div>
@@ -553,46 +533,119 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <div class="section alt" id="proyectos">
   <div class="section-inner">
     <p class="eyebrow rv">02 — Proyectos</p>
-    <h2 class="sec-title rv">Webs que ya están<br>dando resultados.</h2>
-    <p class="sec-sub rv">El tuyo podría ser el siguiente.</p>
+    <h2 class="sec-title rv">Resultados reales,<br>no capturas bonitas.</h2>
+    <p class="sec-sub rv">Cada proyecto nació de un problema concreto y tiene un resultado medible.</p>
     <div class="proj-grid rv">
+
       <div class="proj-card">
         <div class="proj-thumb" style="background:#0E0B08;padding:0;overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop" alt="Tierra Blanca demo" style="width:100%;height:100%;object-fit:cover;opacity:.8;display:block">
-          <div class="proj-result">Demo · Restaurante</div>
+          <img src="tierra-blanca-mockup.png" alt="Tierra Blanca — Restaurante" style="width:100%;height:100%;object-fit:cover;opacity:.9;display:block" onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop'">
+          <div class="proj-result">+3 clientes/mes</div>
         </div>
         <div class="proj-body">
-          <div class="proj-tags"><span class="ptag">Restaurante</span><span class="ptag">Carta online</span><span class="ptag">Reservas</span></div>
+          <div class="proj-tags"><span class="ptag">Next.js</span><span class="ptag">Tailwind</span><span class="ptag">Reservas</span></div>
           <div class="proj-name">Tierra Blanca</div>
-          <p class="proj-desc">Web completa para restaurante andaluz. Carta, galería, formulario de reservas y diseño editorial de impacto.</p>
+          <div class="proj-meta">
+            <div class="proj-meta-row">
+              <span class="proj-meta-label">Problema</span>
+              <span class="proj-meta-text">Restaurante sin presencia digital. Clientes potenciales que no les encontraban en Google.</span>
+            </div>
+            <div class="proj-meta-row">
+              <span class="proj-meta-label">Solución</span>
+              <span class="proj-meta-text">Web completa con carta, galería y reservas online. SEO local optimizado desde el día 1.</span>
+            </div>
+          </div>
           <a href="https://tierra-blanca-demo.vercel.app" class="proj-link" target="_blank" rel="noopener">Ver demo en vivo →</a>
         </div>
       </div>
+
       <div class="proj-card">
         <div class="proj-thumb" style="background:#1a2e1a;padding:0;overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80&auto=format&fit=crop" alt="GymPro Cádiz" style="width:100%;height:100%;object-fit:cover;opacity:.85;display:block">
-          <div class="proj-result">+40% reservas</div>
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80&auto=format&fit=crop" alt="GymPro — Sistema de reservas" style="width:100%;height:100%;object-fit:cover;opacity:.85;display:block">
+          <div class="proj-result">+40% inscripciones</div>
         </div>
         <div class="proj-body">
-          <div class="proj-tags"><span class="ptag">Gimnasio</span><span class="ptag">Pagos online</span><span class="ptag">Membresías</span></div>
-          <div class="proj-name">GymPro Cádiz</div>
-          <p class="proj-desc">Los clientes se apuntan y pagan desde el móvil, a cualquier hora. Sin llamadas ni papeleo.</p>
-          <a href="#contacto" class="proj-link">Ver detalles →</a>
+          <div class="proj-tags"><span class="ptag">React</span><span class="ptag">Node.js</span><span class="ptag">Stripe</span></div>
+          <div class="proj-name">GymPro</div>
+          <div class="proj-meta">
+            <div class="proj-meta-row">
+              <span class="proj-meta-label">Problema</span>
+              <span class="proj-meta-text">El proceso de inscripción era manual — llamadas, formularios en papel, pagos en caja.</span>
+            </div>
+            <div class="proj-meta-row">
+              <span class="proj-meta-label">Solución</span>
+              <span class="proj-meta-text">App web con reserva de clases, pago de membresías y panel de gestión para el equipo.</span>
+            </div>
+          </div>
+          <a href="#contacto" class="proj-link">Ver detalles del proyecto →</a>
         </div>
       </div>
+
       <div class="proj-card">
         <div class="proj-thumb" style="background:#1a0a00;padding:0;overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80&auto=format&fit=crop" alt="BarberBook Sur" style="width:100%;height:100%;object-fit:cover;opacity:.85;display:block">
-          <div class="proj-result">0 llamadas perdidas</div>
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80&auto=format&fit=crop" alt="BarberBook — Citas online" style="width:100%;height:100%;object-fit:cover;opacity:.85;display:block">
+          <div class="proj-result">0 citas perdidas</div>
         </div>
         <div class="proj-body">
-          <div class="proj-tags"><span class="ptag">Peluquería</span><span class="ptag">Citas online</span><span class="ptag">Galería</span></div>
-          <div class="proj-name">BarberBook Sur</div>
-          <p class="proj-desc">Los clientes reservan solos. Sin WhatsApp fuera de horario, sin llamadas perdidas.</p>
-          <a href="#contacto" class="proj-link">Ver detalles →</a>
+          <div class="proj-tags"><span class="ptag">Next.js</span><span class="ptag">PostgreSQL</span><span class="ptag">Email</span></div>
+          <div class="proj-name">BarberBook</div>
+          <div class="proj-meta">
+            <div class="proj-meta-row">
+              <span class="proj-meta-label">Problema</span>
+              <span class="proj-meta-text">Gestionaban citas por WhatsApp. Cancelaciones de última hora y horas perdidas al teléfono.</span>
+            </div>
+            <div class="proj-meta-row">
+              <span class="proj-meta-label">Solución</span>
+              <span class="proj-meta-text">Sistema de citas online con recordatorios automáticos, gestión de agenda y ficha de cliente.</span>
+            </div>
+          </div>
+          <a href="#contacto" class="proj-link">Ver detalles del proyecto →</a>
         </div>
       </div>
+
     </div>
+  </div>
+</div>
+
+<!-- ══ POR QUÉ YO ══ -->
+<div class="section" id="valor">
+  <p class="eyebrow rv">03 — Por qué contratarme</p>
+  <h2 class="sec-title rv">Lo que me diferencia<br>de una agencia.</h2>
+  <p class="sec-sub rv">Sin capas de burocracia. Trabajas directamente con el desarrollador que hace tu web.</p>
+  <div class="val-grid rv">
+
+    <div class="val-card">
+      <div class="val-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="val-title">Entrega en tiempo</div>
+      <p class="val-desc">Plazos reales que se cumplen. Te doy una fecha antes de empezar y la respeto. Sin excusas ni retrasos de meses.</p>
+    </div>
+
+    <div class="val-card">
+      <div class="val-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <div class="val-title">Diseño que diferencia</div>
+      <p class="val-desc">No uso plantillas. Cada proyecto es diseñado desde cero para reflejar tu marca y destacar frente a tu competencia.</p>
+    </div>
+
+    <div class="val-card">
+      <div class="val-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </div>
+      <div class="val-title">Enfocado a resultados</div>
+      <p class="val-desc">Cada decisión tiene un objetivo de negocio detrás. No construyo webs bonitas que no generan nada. Construyo webs que venden.</p>
+    </div>
+
+    <div class="val-card">
+      <div class="val-ico">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <div class="val-title">Comunicación directa</div>
+      <p class="val-desc">Sin tecnicismos, sin intermediarios. Te explico todo en lenguaje claro y te mantengo informado en cada fase del proyecto.</p>
+    </div>
+
   </div>
 </div>
 
@@ -600,7 +653,7 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <div class="disruptor rv">
   <div class="disruptor-inner">
     <div class="disruptor-left">
-      <span class="disruptor-label">Por qué tener web</span>
+      <span class="disruptor-label">La diferencia</span>
       <blockquote class="disruptor-quote">
         "Una web bien hecha no es un gasto. Es el comercial que trabaja <em>mientras tú duermes.</em>"
       </blockquote>
@@ -608,12 +661,12 @@ input:focus-visible,textarea:focus-visible{outline:none}
     </div>
     <div class="disruptor-right">
       <div class="disruptor-stat">
-        <span class="ds-n">+300%</span>
-        <span class="ds-l">Más visibilidad en Google con SEO local</span>
+        <span class="ds-n">100%</span>
+        <span class="ds-l">Proyectos entregados en plazo acordado</span>
       </div>
       <div class="disruptor-stat">
-        <span class="ds-n">7 días</span>
-        <span class="ds-l">De presupuesto a web online. Sin esperas</span>
+        <span class="ds-n">14 días</span>
+        <span class="ds-l">De briefing a web online. Sin esperas interminables</span>
       </div>
       <div class="disruptor-stat">
         <span class="ds-n">0€ extra</span>
@@ -625,14 +678,14 @@ input:focus-visible,textarea:focus-visible{outline:none}
 
 <!-- ══ PROCESO ══ -->
 <div class="section">
-  <p class="eyebrow rv">03 — Cómo trabajo</p>
-  <h2 class="sec-title rv">Sencillo y sin complicaciones.</h2>
-  <p class="sec-sub rv">No necesitas saber de tecnología. Me encargo de todo.</p>
+  <p class="eyebrow rv">04 — Cómo trabajo</p>
+  <h2 class="sec-title rv">Simple, claro y sin rodeos.</h2>
+  <p class="sec-sub rv">No necesitas saber de tecnología. Yo me encargo de todo.</p>
   <div class="proc-grid rv">
-    <div class="proc-step"><div class="proc-num">01</div><div class="proc-title">Hablamos</div><div class="proc-desc">Me cuentas tu negocio. En 24 horas tienes presupuesto cerrado, sin sorpresas.</div></div>
-    <div class="proc-step"><div class="proc-num">02</div><div class="proc-title">Diseño</div><div class="proc-desc">Creo el diseño y te lo muestro antes de programar. Si algo no te convence, lo cambiamos.</div></div>
-    <div class="proc-step"><div class="proc-num">03</div><div class="proc-title">Desarrollo</div><div class="proc-desc">Programo tu web en 7 días. Rápida, optimizada para Google y perfecta en móvil.</div></div>
-    <div class="proc-step"><div class="proc-num">04</div><div class="proc-title">Lanzamos</div><div class="proc-desc">Tu web online. Te explico cómo funciona y estoy disponible si necesitas algo.</div></div>
+    <div class="proc-step"><div class="proc-num">01</div><div class="proc-title">Hablamos</div><div class="proc-desc">Me cuentas el proyecto y tus objetivos. En 24 horas tienes presupuesto cerrado, sin compromiso.</div></div>
+    <div class="proc-step"><div class="proc-num">02</div><div class="proc-title">Diseño</div><div class="proc-desc">Te presento el diseño completo antes de escribir una sola línea de código. Si algo no encaja, lo cambiamos.</div></div>
+    <div class="proc-step"><div class="proc-num">03</div><div class="proc-title">Desarrollo</div><div class="proc-desc">Programo tu proyecto con las mejores tecnologías. Rápido, seguro y optimizado desde el primer día.</div></div>
+    <div class="proc-step"><div class="proc-num">04</div><div class="proc-title">Lanzamos</div><div class="proc-desc">Publicación, pruebas finales y traspaso completo. El proyecto es tuyo al 100%.</div></div>
   </div>
   <div class="proc-accordion rv">
     <div class="proc-acc-item open">
@@ -640,28 +693,28 @@ input:focus-visible,textarea:focus-visible{outline:none}
         <span class="proc-acc-num">01</span>
         <span class="proc-acc-title">Hablamos</span><span class="proc-acc-chevron">▼</span>
       </div>
-      <div class="proc-acc-body"><p class="proc-acc-text">Me cuentas tu negocio. En 24 horas tienes presupuesto cerrado, sin sorpresas.</p></div>
+      <div class="proc-acc-body"><p class="proc-acc-text">Me cuentas el proyecto y tus objetivos. En 24 horas tienes presupuesto cerrado, sin compromiso.</p></div>
     </div>
     <div class="proc-acc-item">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">02</span>
         <span class="proc-acc-title">Diseño</span><span class="proc-acc-chevron">▼</span>
       </div>
-      <div class="proc-acc-body"><p class="proc-acc-text">Creo el diseño y te lo muestro antes de programar. Si algo no te convence, lo cambiamos.</p></div>
+      <div class="proc-acc-body"><p class="proc-acc-text">Te presento el diseño completo antes de escribir una sola línea de código. Si algo no encaja, lo cambiamos.</p></div>
     </div>
     <div class="proc-acc-item">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">03</span>
         <span class="proc-acc-title">Desarrollo</span><span class="proc-acc-chevron">▼</span>
       </div>
-      <div class="proc-acc-body"><p class="proc-acc-text">Programo tu web en 7 días. Rápida, optimizada para Google y perfecta en móvil.</p></div>
+      <div class="proc-acc-body"><p class="proc-acc-text">Programo tu proyecto con las mejores tecnologías. Rápido, seguro y optimizado desde el primer día.</p></div>
     </div>
     <div class="proc-acc-item">
       <div class="proc-acc-header" onclick="toggleAcc(this)">
         <span class="proc-acc-num">04</span>
         <span class="proc-acc-title">Lanzamos</span><span class="proc-acc-chevron">▼</span>
       </div>
-      <div class="proc-acc-body"><p class="proc-acc-text">Tu web online. Te explico cómo funciona y estoy disponible si necesitas algo más.</p></div>
+      <div class="proc-acc-body"><p class="proc-acc-text">Publicación, pruebas finales y traspaso completo. El proyecto es tuyo al 100%.</p></div>
     </div>
   </div>
 </div>
@@ -669,23 +722,32 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <!-- ══ TESTIMONIOS ══ -->
 <div class="section alt">
   <div class="section-inner">
-    <p class="eyebrow rv">04 — Testimonios</p>
+    <p class="eyebrow rv">05 — Testimonios</p>
     <h2 class="sec-title rv">Lo que dicen mis clientes.</h2>
     <div class="testi-grid rv">
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
         <p class="testi-text">La web nos trajo 3 clientes nuevos el primer mes. No me lo podía creer. Ahora la gente nos encuentra en Google sin que les digamos nada.</p>
-        <div class="testi-author"><div class="testi-av" style="background:none;overflow:hidden;padding:0"><img src="https://i.pravatar.cc/80?img=47" alt="María García" style="width:100%;height:100%;object-fit:cover"></div><div><div class="testi-name">María García</div><div class="testi-biz">La Tasca del Puerto · Conil</div></div></div>
+        <div class="testi-author">
+          <div class="testi-av">MG</div>
+          <div><div class="testi-name">María García</div><div class="testi-biz">La Tasca del Puerto · Conil</div></div>
+        </div>
       </div>
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">Muy profesional y rapidísimo. En una semana teníamos la web lista. El sistema de reservas es lo mejor — los clientes se apuntan solos.</p>
-        <div class="testi-author"><div class="testi-av" style="background:none;overflow:hidden;padding:0"><img src="https://i.pravatar.cc/80?img=12" alt="Carlos Ruiz" style="width:100%;height:100%;object-fit:cover"></div><div><div class="testi-name">Carlos Ruiz</div><div class="testi-biz">GymPro Cádiz · Jerez</div></div></div>
+        <p class="testi-text">Muy profesional y rapidísimo. En dos semanas teníamos la plataforma lista. El sistema de reservas es lo mejor — los clientes se apuntan solos.</p>
+        <div class="testi-author">
+          <div class="testi-av">CR</div>
+          <div><div class="testi-name">Carlos Ruiz</div><div class="testi-biz">GymPro · Jerez de la Frontera</div></div>
+        </div>
       </div>
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">Ya no tengo que estar pendiente del WhatsApp a todas horas. Los clientes reservan solos. Alejandro lo explica todo muy claro, sin tecnicismos.</p>
-        <div class="testi-author"><div class="testi-av" style="background:none;overflow:hidden;padding:0"><img src="https://i.pravatar.cc/80?img=45" alt="Ana López" style="width:100%;height:100%;object-fit:cover"></div><div><div class="testi-name">Ana López</div><div class="testi-biz">BarberBook Sur · Cádiz</div></div></div>
+        <p class="testi-text">Ya no tengo que estar pendiente del móvil todo el día. Los clientes reservan solos. Alejandro lo explica todo muy claro, sin tecnicismos raros.</p>
+        <div class="testi-author">
+          <div class="testi-av">AL</div>
+          <div><div class="testi-name">Ana López</div><div class="testi-biz">BarberBook Sur · Cádiz</div></div>
+        </div>
       </div>
     </div>
   </div>
@@ -694,19 +756,21 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <!-- ══ SOBRE MÍ ══ -->
 <div class="section" id="sobre-mi">
   <div class="about-grid rv">
-    <div class="about-photo" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&fit=crop&crop=faces');background-size:cover;background-position:center top">
+    <div class="about-photo">
+      <div class="about-photo-letters">AP</div>
       <div class="about-photo-label">Full Stack Developer</div>
+      <div class="about-photo-hint">Conil · Cádiz</div>
     </div>
     <div>
-      <p class="eyebrow">05 — Sobre mí</p>
+      <p class="eyebrow">06 — Sobre mí</p>
       <div class="about-name">Alejandro<br>Pérez López</div>
       <div class="about-role">Full Stack Developer · Cádiz, Andalucía</div>
-      <p class="about-text">Soy desarrollador web con base en <b>Conil de la Frontera</b>. Una cosa tengo clara: <b>una web bonita que no trae clientes no sirve para nada.</b></p>
-      <p class="about-text">Me especializo en negocios locales de Andalucía — entiendo cómo funciona la zona y sé qué necesita tu cliente para encontrarte y llamarte.</p>
+      <p class="about-text">Desarrollo web desde hace varios años, trabajando con negocios de distintos sectores. Tengo una cosa clara: <b>una web bonita que no trae clientes no sirve para nada.</b></p>
+      <p class="about-text">Me especializo en construir productos digitales que resuelven problemas reales — desde una landing que convierte hasta una app web completa. Trabajo de forma directa, con comunicación clara y resultados medibles.</p>
       <div class="skill-chips">
-        <span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Next.js</span>
-        <span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">SEO</span>
-        <span class="chip">Figma</span><span class="chip">Docker</span>
+        <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span>
+        <span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Tailwind</span>
+        <span class="chip">Figma</span><span class="chip">SEO</span>
       </div>
       <a href="#contacto" class="btn-primary" style="width:fit-content">Hablemos de tu proyecto →</a>
     </div>
@@ -716,28 +780,28 @@ input:focus-visible,textarea:focus-visible{outline:none}
 <!-- ══ FAQ ══ -->
 <div class="section alt">
   <div class="section-inner">
-    <p class="eyebrow rv">06 — Preguntas frecuentes</p>
+    <p class="eyebrow rv">07 — Preguntas frecuentes</p>
     <h2 class="sec-title rv">Resuelvo tus dudas.</h2>
     <div class="faq-list rv">
       <div class="faq-item open">
-        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Cuánto cuesta una web?</span><span class="faq-chevron">▼</span></div>
-        <div class="faq-body"><p class="faq-a">Las webs para negocios locales empiezan desde 300€. El precio final depende de lo que necesites. Te mando un presupuesto cerrado en 24 horas, sin compromiso y sin sorpresas.</p></div>
+        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Cuánto cuesta un proyecto?</span><span class="faq-chevron">▼</span></div>
+        <div class="faq-body"><p class="faq-a">Depende del alcance. Las webs y landings empiezan desde 800€, los e-commerce y sistemas de reservas desde 1.000€–1.500€, y las apps web más completas desde 2.000€. Siempre te mando un presupuesto cerrado en 24 horas, sin sorpresas ni letra pequeña.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Cuánto tarda en estar lista?</span><span class="faq-chevron">▼</span></div>
-        <div class="faq-body"><p class="faq-a">La entrega media es de 7 días desde que aprobamos el diseño. Para proyectos más complejos como tiendas online puede ser 2 semanas. Siempre te digo el plazo exacto antes de empezar.</p></div>
+        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Cuánto tarda en estar listo?</span><span class="faq-chevron">▼</span></div>
+        <div class="faq-body"><p class="faq-a">Una web o landing: 7–10 días. Un e-commerce o sistema de reservas: 2–3 semanas. Un proyecto a medida más completo: 3–6 semanas. Te doy el plazo exacto antes de empezar y lo cumplo.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Necesito saber de tecnología?</span><span class="faq-chevron">▼</span></div>
-        <div class="faq-body"><p class="faq-a">Para nada. Yo me encargo de todo — diseño, programación y puesta en marcha. Tú me dices qué quieres conseguir y yo lo hago realidad. Al final te explico cómo funciona todo en 10 minutos.</p></div>
+        <div class="faq-body"><p class="faq-a">No. Me encargo de todo — diseño, desarrollo, hosting y puesta en marcha. Tú me dices qué quieres conseguir y yo lo hago realidad. Al entregar te explico cómo funciona en 10 minutos.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Puedo ver la web antes de pagarla?</span><span class="faq-chevron">▼</span></div>
-        <div class="faq-body"><p class="faq-a">Sí. Primero te muestro el diseño completo para que lo apruebes. Solo después empiezo a programar. Si algo no te convence, lo cambiamos antes de seguir.</p></div>
+        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Puedo ver el diseño antes de pagar?</span><span class="faq-chevron">▼</span></div>
+        <div class="faq-body"><p class="faq-a">Sí. Primero te presento el diseño completo para que lo apruebes. Solo después empiezo el desarrollo. Si algo no te convence, lo cambiamos antes de seguir adelante.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Qué pasa después de lanzar la web?</span><span class="faq-chevron">▼</span></div>
-        <div class="faq-body"><p class="faq-a">Tengo un servicio de mantenimiento desde 30€/mes para que tu web esté siempre actualizada y segura. Y si tienes cualquier duda, estoy disponible por WhatsApp.</p></div>
+        <div class="faq-header" onclick="toggleFaq(this)"><span class="faq-q">¿Qué pasa después de lanzar?</span><span class="faq-chevron">▼</span></div>
+        <div class="faq-body"><p class="faq-a">El proyecto es tuyo al 100% — código, dominio y hosting. Ofrezco mantenimiento mensual para quien lo necesite, pero no es obligatorio. Y para cualquier duda posterior, siempre puedes contactarme directamente.</p></div>
       </div>
     </div>
   </div>
@@ -748,14 +812,14 @@ input:focus-visible,textarea:focus-visible{outline:none}
   <div class="ct-inner rv">
     <div class="ct-grid">
       <div>
-        <p class="ct-eyebrow">07 — Contacto</p>
-        <h2 class="ct-title">¿Listo para una web que <em>funcione de verdad?</em></h2>
-        <p class="ct-sub">Cuéntame tu negocio. En menos de 24 horas tienes presupuesto sin compromiso.</p>
+        <p class="ct-eyebrow">08 — Contacto</p>
+        <h2 class="ct-title">¿Listo para un proyecto que <em>funcione de verdad?</em></h2>
+        <p class="ct-sub">Cuéntame tu idea. En menos de 24 horas tienes presupuesto sin compromiso y sin letra pequeña.</p>
         <div class="ct-links">
           <a href="mailto:perezlopezalej@gmail.com" class="ct-link">perezlopezalej@gmail.com</a>
-          <a href="https://wa.me/34600000000" class="ct-link" target="_blank">WhatsApp directo</a>
-          <a href="#" class="ct-link">LinkedIn — Alejandro Pérez López</a>
-          <a href="#" class="ct-link">GitHub — @alejandrodev</a>
+          <a href="https://wa.me/34600000000" class="ct-link" target="_blank" rel="noopener">WhatsApp directo</a>
+          <a href="https://linkedin.com/in/alejandro-perez-lopez" class="ct-link" target="_blank" rel="noopener">LinkedIn — Alejandro Pérez López</a>
+          <a href="https://github.com/perezlopezalej" class="ct-link" target="_blank" rel="noopener">GitHub — perezlopezalej</a>
         </div>
       </div>
       <form class="cf" action="https://formspree.io/f/xgodrjyr" method="POST" onsubmit="handleSend(event)">
@@ -766,14 +830,14 @@ input:focus-visible,textarea:focus-visible{outline:none}
           </div>
           <div>
             <div class="cf-label">Tu email</div>
-            <input type="email" name="email" placeholder="maria@negocio.com" required>
+            <input type="email" name="email" placeholder="maria@empresa.com" required>
           </div>
         </div>
-        <div class="cf-label">Tu negocio</div>
-        <input type="text" name="negocio" placeholder="Ej: Restaurante en Conil de la Frontera">
-        <div class="cf-label">¿Qué quieres conseguir?</div>
-        <textarea name="mensaje" placeholder="Cuéntame sobre tu negocio y qué quieres lograr con la web..."></textarea>
-        <input type="hidden" name="_subject" value="Nuevo presupuesto desde alejandrodev.es">
+        <div class="cf-label">Tu empresa o proyecto</div>
+        <input type="text" name="negocio" placeholder="Ej: Restaurante en Conil, startup de reservas, app de gestión...">
+        <div class="cf-label">¿Qué necesitas?</div>
+        <textarea name="mensaje" placeholder="Cuéntame el proyecto y qué quieres conseguir. Cuanta más info, mejor presupuesto podré darte."></textarea>
+        <input type="hidden" name="_subject" value="Nuevo proyecto desde alejandrodev.es">
         <button type="submit" class="btn-send" id="sendBtn">Enviar y recibir presupuesto →</button>
         <p class="form-note">Sin compromiso · Respondo en menos de 24 horas</p>
       </form>
@@ -786,9 +850,9 @@ input:focus-visible,textarea:focus-visible{outline:none}
   <span class="f-logo">Alejandro Pérez López</span>
   <div class="f-links">
     <a href="mailto:perezlopezalej@gmail.com" class="f-link">Email</a>
-    <a href="#" class="f-link">LinkedIn</a>
-    <a href="#" class="f-link">GitHub</a>
-    <a href="#contacto" class="f-link f-cta">Pide presupuesto →</a>
+    <a href="https://linkedin.com/in/alejandro-perez-lopez" class="f-link" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/perezlopezalej" class="f-link" target="_blank" rel="noopener">GitHub</a>
+    <a href="#contacto" class="f-link f-cta">Contratar →</a>
   </div>
   <span class="f-right">© 2026 · alejandrodev.es</span>
 </footer>
@@ -812,7 +876,7 @@ const navObs = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.3, rootMargin: '-60px 0px -40% 0px' });
 document.querySelectorAll('section[id], div[id]').forEach(el => {
-  if (['servicios','proyectos','sobre-mi','contacto'].includes(el.id)) navObs.observe(el);
+  if (['servicios','proyectos','valor','sobre-mi','contacto'].includes(el.id)) navObs.observe(el);
 });
 
 function toggleFaq(header) {
