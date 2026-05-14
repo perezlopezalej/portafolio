@@ -5,6 +5,7 @@ const TESTIMONIALS = [
     initials: "MG",
     name: "María García",
     biz: "La Tasca del Puerto · Conil",
+    siteUrl: "https://tierra-blanca-demo.vercel.app",
   },
   {
     stars: "★★★★★",
@@ -38,7 +39,7 @@ export function Testimonials() {
           {TESTIMONIALS.map((t) => (
             <div
               key={t.name}
-              className="testi-card-mobile flex flex-col bg-surface border border-border rounded-[16px] p-7 transition-[border-color] duration-300 hover:border-border-3"
+              className="testi-card-mobile card-glow flex flex-col bg-surface border border-border rounded-[14px] p-7"
             >
               <div className="text-amber text-[0.75rem] tracking-[0.12em] mb-4">
                 {t.stars}
@@ -56,6 +57,16 @@ export function Testimonials() {
                 <div>
                   <div className="text-[0.83rem] font-semibold text-fg-2 leading-tight">{t.name}</div>
                   <div className="text-[0.7rem] text-subtle mt-[0.15rem]">{t.biz}</div>
+                  {t.siteUrl && (
+                    <a
+                      href={t.siteUrl}
+                      target="_blank"
+                      rel="noopener"
+                      className="text-[0.68rem] text-accent-light no-underline hover:underline mt-0.5 block transition-colors duration-180"
+                    >
+                      Ver web →
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

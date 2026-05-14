@@ -57,20 +57,22 @@ export function Value() {
 
       <div
         data-rv
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-11"
+        className="flex flex-col mt-11"
       >
         {VALUES.map((v) => (
           <div
             key={v.title}
-            className="group p-7 bg-surface border border-border rounded-[14px] transition-[border-color,background] duration-350 hover:border-border-3 hover:bg-surface-2"
+            className="group flex items-start gap-6 py-7 border-b border-border last:border-b-0"
           >
-            <div className="w-10 h-10 rounded-md bg-accent-dim flex items-center justify-center text-accent-light mb-4 transition-colors duration-180 group-hover:bg-[rgba(139,92,246,0.18)]">
+            <div className="w-10 h-10 rounded-md bg-accent-dim flex items-center justify-center text-accent-light shrink-0 mt-0.5 transition-colors duration-180 group-hover:bg-[rgba(109,94,247,0.18)]">
               {v.icon}
             </div>
-            <div className="text-[0.97rem] font-semibold tracking-[-0.01em] text-fg mb-[0.4rem] transition-colors duration-180 group-hover:text-accent-light">
-              {v.title}
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-1 md:gap-10 items-start">
+              <div className="text-[1rem] font-semibold text-fg tracking-[-0.015em] transition-colors duration-180 group-hover:text-accent-light leading-tight">
+                {v.title}
+              </div>
+              <p className="text-[0.85rem] text-muted leading-[1.65]">{v.desc}</p>
             </div>
-            <p className="text-[0.82rem] text-muted leading-[1.65]">{v.desc}</p>
           </div>
         ))}
       </div>

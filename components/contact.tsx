@@ -46,10 +46,10 @@ export function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
-            <p className="ct-eyebrow eyebrow">08 — Contacto</p>
+            <p className="eyebrow">08 — Contacto</p>
             <h2 className="section-title mb-4">
               ¿Listo para un proyecto que{" "}
-              <em className="not-italic italic text-accent-light">
+              <em className="not-italic text-accent-light">
                 funcione de verdad?
               </em>
             </h2>
@@ -117,8 +117,8 @@ export function Contact() {
           {/* Form */}
           <form onSubmit={handleSubmit} className="flex flex-col gap-0">
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <div className="flex flex-col gap-[0.35rem]">
-                <label className="text-[0.67rem] font-semibold tracking-[0.08em] uppercase text-subtle">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                   Tu nombre
                 </label>
                 <input
@@ -129,8 +129,8 @@ export function Contact() {
                   className="cf-input"
                 />
               </div>
-              <div className="flex flex-col gap-[0.35rem]">
-                <label className="text-[0.67rem] font-semibold tracking-[0.08em] uppercase text-subtle">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                   Tu email
                 </label>
                 <input
@@ -143,8 +143,8 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[0.35rem] mb-4">
-              <label className="text-[0.67rem] font-semibold tracking-[0.08em] uppercase text-subtle">
+            <div className="flex flex-col gap-1.5 mb-4">
+              <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                 Tu empresa o proyecto
               </label>
               <input
@@ -155,8 +155,21 @@ export function Contact() {
               />
             </div>
 
-            <div className="flex flex-col gap-[0.35rem] mb-5">
-              <label className="text-[0.67rem] font-semibold tracking-[0.08em] uppercase text-subtle">
+            <div className="flex flex-col gap-1.5 mb-4">
+              <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
+                Presupuesto estimado
+              </label>
+              <select name="presupuesto" className="cf-input">
+                <option value="">Selecciona un rango...</option>
+                <option value="menos-1000">Menos de 1.000€</option>
+                <option value="1000-2500">1.000€ – 2.500€</option>
+                <option value="2500-5000">2.500€ – 5.000€</option>
+                <option value="mas-5000">Más de 5.000€</option>
+              </select>
+            </div>
+
+            <div className="flex flex-col gap-1.5 mb-5">
+              <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                 ¿Qué necesitas?
               </label>
               <textarea
@@ -172,9 +185,9 @@ export function Contact() {
             <button
               type="submit"
               disabled={status === "sending" || status === "sent"}
-              className="w-full bg-accent text-white text-[0.88rem] font-semibold border-none px-6 py-3 rounded-[10px] cursor-pointer transition-[opacity,transform] duration-[180ms] hover:opacity-90 hover:-translate-y-px active:translate-y-0 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="btn-sweep w-full bg-accent text-white text-[0.88rem] font-semibold border-none px-6 py-3 rounded-[10px] cursor-pointer transition-[opacity,transform] duration-180 hover:opacity-90 hover:-translate-y-px active:translate-y-0 disabled:opacity-70 disabled:cursor-not-allowed"
               style={{
-                boxShadow: "0 2px 12px rgba(139,92,246,0.3)",
+                boxShadow: "0 2px 12px rgba(109,94,247,0.25)",
                 background: status === "sent" ? "#16a34a" : status === "error" ? "#dc2626" : undefined,
               }}
             >

@@ -50,7 +50,7 @@ export function Faq() {
                 <span className="text-[0.9rem] font-semibold text-fg-2 leading-[1.4] transition-colors duration-180 hover:text-fg">
                   {f.q}
                 </span>
-                <span className="faq-chevron text-subtle text-[0.72rem] shrink-0">▼</span>
+                <svg className="faq-chevron w-3 h-3 text-subtle shrink-0" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M2 4l4 4 4-4"/></svg>
               </button>
               <div className="faq-body">
                 <p className="text-[0.85rem] text-muted leading-[1.75] px-5 pb-4">

@@ -40,16 +40,15 @@ export function Nav() {
     <nav
       className={`sticky top-0 z-50 h-14 flex items-center justify-between px-[clamp(1.5rem,5vw,3.5rem)] border-b border-border transition-[box-shadow] duration-200 ${scrolled ? "nav-scrolled" : ""}`}
       style={{
-        background: "rgba(9,9,11,0.88)",
+        background: "rgba(11,15,25,0.88)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
       }}
     >
       <a
         href="#"
-        className="text-[0.92rem] font-semibold text-fg flex items-center gap-[9px] no-underline tracking-[-0.01em]"
+        className="hover-underline text-[0.92rem] font-semibold text-fg flex items-center no-underline tracking-[-0.01em]"
       >
-        <span className="w-[7px] h-[7px] rounded-full bg-green shrink-0 dot-blink" />
         Alejandro Pérez
       </a>
 
@@ -70,7 +69,7 @@ export function Nav() {
         <a
           href="#contacto"
           className="ml-2 px-[0.9rem] py-[0.48rem] rounded-full text-[0.82rem] font-semibold bg-accent text-white no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-px active:translate-y-0"
-          style={{ boxShadow: "0 1px 10px rgba(139,92,246,0.3)" }}
+          style={{ boxShadow: "0 1px 10px rgba(109,94,247,0.25)" }}
         >
           Contratar →
         </a>

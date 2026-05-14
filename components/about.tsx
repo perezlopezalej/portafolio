@@ -10,7 +10,7 @@ export function About() {
         {/* Photo placeholder */}
         <div
           className="relative overflow-hidden rounded-[20px] bg-surface border border-border-2 flex flex-col items-center justify-center w-full md:w-[280px] h-[220px] md:h-[340px] shrink-0"
-          style={{ background: "radial-gradient(ellipse at 40% 30%, rgba(139,92,246,0.08), transparent 60%) #111115" }}
+          style={{ background: "radial-gradient(ellipse at 40% 30%, rgba(109,94,247,0.1), transparent 60%) #131926" }}
         >
           <span className="text-[7rem] md:text-[7rem] font-bold tracking-[-0.05em] text-white/[0.05] leading-none relative z-[1]">
             AP
@@ -35,7 +35,7 @@ export function About() {
             Full Stack Developer · Cádiz, Andalucía
           </div>
           <p className="text-[0.9rem] text-muted leading-[1.75] mb-3">
-            Desarrollo web desde hace varios años, trabajando con negocios de
+            Desarrollo web desde 2022, trabajando con negocios de
             distintos sectores. Tengo una cosa clara:{" "}
             <strong className="text-fg-2 font-semibold">
               una web bonita que no trae clientes no sirve para nada.
@@ -53,7 +53,7 @@ export function About() {
             {SKILLS.map((skill) => (
               <span
                 key={skill}
-                className="text-[0.72rem] font-medium px-3 py-[0.3rem] rounded-full bg-surface-2 text-muted border border-border-2 transition-colors duration-[180ms] hover:bg-accent-dim hover:text-accent-light hover:border-accent-border cursor-default"
+                className="text-[0.72rem] font-medium px-3 py-[0.3rem] rounded-full bg-surface-2 text-muted border border-border-2 transition-colors duration-180 hover:bg-accent-dim hover:text-accent-light hover:border-accent-border cursor-default"
               >
                 {skill}
               </span>
@@ -62,8 +62,8 @@ export function About() {
 
           <a
             href="#contacto"
-            className="inline-flex items-center gap-1.5 bg-accent text-white text-[0.85rem] font-semibold px-[1.35rem] py-[0.65rem] rounded-[10px] no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0"
-            style={{ boxShadow: "0 2px 16px rgba(139,92,246,0.35)" }}
+            className="btn-sweep inline-flex items-center gap-1.5 bg-accent text-white text-[0.85rem] font-semibold px-[1.35rem] py-[0.65rem] rounded-[10px] no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0"
+            style={{ boxShadow: "0 2px 16px rgba(109,94,247,0.3)" }}
           >
             Hablemos de tu proyecto →
           </a>

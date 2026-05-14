@@ -3,21 +3,21 @@
 /* ── DESIGN TOKENS ── */
 @theme {
   /* Backgrounds */
-  --color-bg: #09090b;
-  --color-bg-alt: #0f0f12;
-  --color-surface: #111115;
-  --color-surface-2: #18181c;
-  --color-surface-3: #1f1f24;
+  --color-bg: #0B0F19;
+  --color-bg-alt: #0F1322;
+  --color-surface: #131926;
+  --color-surface-2: #192032;
+  --color-surface-3: #20283D;
 
   /* Text */
-  --color-fg: #f4f4f5;
-  --color-fg-2: #d4d4d8;
-  --color-muted: #a1a1aa;
-  --color-subtle: #71717a;
+  --color-fg: #FFFFFF;
+  --color-fg-2: #D4D4D8;
+  --color-muted: #A1A1AA;
+  --color-subtle: #71717A;
 
   /* Accent — violet */
-  --color-accent: #8b5cf6;
-  --color-accent-light: #a78bfa;
+  --color-accent: #6D5EF7;
+  --color-accent-light: #9585F9;
 
   /* Semantic */
   --color-green: #22c55e;
@@ -29,8 +29,8 @@
   --color-border-3: rgba(255, 255, 255, 0.16);
 
   /* Accent variants */
-  --color-accent-dim: rgba(139, 92, 246, 0.1);
-  --color-accent-border: rgba(139, 92, 246, 0.25);
+  --color-accent-dim: rgba(109, 94, 247, 0.12);
+  --color-accent-border: rgba(109, 94, 247, 0.25);
 
   /* Font */
   --font-sans: var(--font-inter);
@@ -51,8 +51,8 @@ html {
 }
 
 body {
-  background: #09090b;
-  color: #f4f4f5;
+  background: #0B0F19;
+  color: #FFFFFF;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   overflow-x: hidden;
 }
@@ -72,7 +72,7 @@ body {
 
 /* ── FOCUS ── */
 :focus-visible {
-  outline: 2px solid #8b5cf6;
+  outline: 2px solid #6D5EF7;
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -116,7 +116,7 @@ textarea:focus-visible {
 
 /* ── GRADIENT TEXT ── */
 .gradient-text {
-  background: linear-gradient(120deg, #ddd6fe 0%, #a78bfa 50%, #818cf8 100%);
+  background: linear-gradient(120deg, #C0B4FC 0%, #9585F9 45%, #6D5EF7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,12 +128,13 @@ textarea:focus-visible {
   overflow: hidden;
   background-image:
     radial-gradient(
-      ellipse 80% 55% at 50% -5%,
-      rgba(139, 92, 246, 0.1) 0%,
-      transparent 70%
+      ellipse 85% 60% at 50% -5%,
+      rgba(109, 94, 247, 0.18) 0%,
+      transparent 65%
     ),
-    radial-gradient(circle, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 100% 100%, 28px 28px;
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
 }
 
 /* ── BLINK DOT ── */
@@ -150,7 +151,7 @@ textarea:focus-visible {
 
 /* ── SECTION ALT PATTERN ── */
 .section-alt {
-  background-color: #0f0f12;
+  background-color: #0F1322;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background-image:
@@ -177,15 +178,19 @@ textarea:focus-visible {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #a78bfa;
+  color: #9585F9;
   margin-bottom: 0.85rem;
 }
 .eyebrow::before {
   content: "";
   width: 16px;
   height: 1.5px;
-  background: #8b5cf6;
+  background: linear-gradient(90deg, #6D5EF7, #9585F9);
   flex-shrink: 0;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.eyebrow:hover::before {
+  width: 32px;
 }
 
 /* ── DEVICE MOCKUP ── */
@@ -273,7 +278,7 @@ textarea:focus-visible {
 
 /* ── FORM ── */
 .cf-input {
-  background: #111115;
+  background: #131926;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #f4f4f5;
   font-family: var(--font-inter), system-ui, sans-serif;
@@ -287,8 +292,21 @@ textarea:focus-visible {
 .cf-input::placeholder {
   color: #71717a;
 }
+select.cf-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%2371717a' stroke-width='1.75'%3E%3Cpath d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+select.cf-input option {
+  background: #131926;
+  color: #FFFFFF;
+}
 .cf-input:focus {
-  border-color: #8b5cf6;
+  border-color: #6D5EF7;
 }
 
 /* ── MOBILE OVERFLOW SCROLLERS ── */
@@ -319,5 +337,71 @@ textarea:focus-visible {
     min-width: 270px;
     flex-shrink: 0;
     scroll-snap-align: start;
+  }
+}
+
+/* ── HOVER UNDERLINE (signature element) ── */
+.hover-underline {
+  position: relative;
+}
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, #6D5EF7, #9585F9);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* ── CARD GLOW (microinteracción firma) ── */
+.card-glow {
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s ease,
+    border-color 0.25s ease;
+}
+.card-glow:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(109, 94, 247, 0.2),
+    0 16px 48px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(109, 94, 247, 0.07);
+}
+
+/* ── BTN SWEEP (light sweep en hover) ── */
+@keyframes sweep {
+  from { transform: translateX(-100%) skewX(-15deg); }
+  to   { transform: translateX(350%)  skewX(-15deg); }
+}
+.btn-sweep {
+  position: relative;
+  overflow: hidden;
+}
+.btn-sweep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: translateX(-100%) skewX(-15deg);
+  pointer-events: none;
+}
+.btn-sweep:hover::before {
+  animation: sweep 0.55s ease forwards;
+}
+
+/* ── WA FLOAT: desktop only ── */
+@media (min-width: 1024px) {
+  .wa-float {
+    display: none;
   }
 }

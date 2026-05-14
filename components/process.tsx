@@ -74,7 +74,7 @@ export function Process() {
               <span className="text-[0.88rem] font-semibold flex-1 text-fg-2">
                 {s.title}
               </span>
-              <span className="proc-acc-chevron text-subtle text-[0.7rem] shrink-0">▼</span>
+              <svg className="proc-acc-chevron w-3 h-3 text-subtle shrink-0" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M2 4l4 4 4-4"/></svg>
             </button>
             <div className="proc-acc-body">
               <p className="proc-acc-text text-[0.82rem] text-muted leading-[1.65]" style={{ paddingLeft: "calc(26px + 0.85rem)" }}>

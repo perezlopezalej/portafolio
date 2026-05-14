@@ -43,8 +43,8 @@ const PROJECTS = [
     solution:
       "Sistema de reservas propio con confirmaciones y recordatorios automáticos. El cliente reserva cuando quiere; el barbero trabaja sin interrupciones.",
     tags: ["Next.js", "PostgreSQL"],
-    link: "#contacto",
-    linkLabel: "Ver detalles →",
+    link: "#proyectos",
+    linkLabel: "Próximamente →",
   },
 ]
 
@@ -55,15 +55,12 @@ export function Projects() {
         <p className="eyebrow" data-rv>
           02 — Proyectos
         </p>
-        <h2
-          data-rv
-          className="text-[clamp(1.85rem,3vw,2.5rem)] font-bold tracking-[-0.035em] leading-[1.1] mb-[0.55rem] text-fg"
-        >
+        <h2 data-rv className="section-title">
           Soluciones reales
           <br />
           para negocios reales.
         </h2>
-        <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-[480px]">
+        <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-120">
           Cada proyecto parte de un problema de negocio concreto y termina con
           un resultado que el cliente puede medir.
         </p>
@@ -75,7 +72,7 @@ export function Projects() {
           {PROJECTS.map((p) => (
             <div
               key={p.name}
-              className="group flex flex-col bg-surface border border-border rounded-[14px] overflow-hidden transition-[border-color,transform] duration-[350ms] hover:border-border-3 hover:-translate-y-[3px]"
+              className="group card-glow flex flex-col bg-surface border border-border rounded-[14px] overflow-hidden"
             >
               {/* Thumbnail */}
               <div className="relative h-[210px] overflow-hidden bg-surface-2 shrink-0">

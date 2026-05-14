@@ -1,7 +1,7 @@
 const SERVICES = [
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-4.5 h-4.5">
         <rect x="2" y="3" width="20" height="14" rx="2" />
         <line x1="8" y1="21" x2="16" y2="21" />
         <line x1="12" y1="17" x2="12" y2="21" />
@@ -10,10 +10,11 @@ const SERVICES = [
     name: "Landing page / Web corporativa",
     desc: "Diseño a medida que transmite autoridad, convierte visitas en leads y posiciona tu negocio por delante de la competencia.",
     price: "Desde 800€",
+    roi: "1 cliente nuevo al mes lo amortiza",
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-4.5 h-4.5">
         <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
         <line x1="3" y1="6" x2="21" y2="6" />
         <path d="M16 10a4 4 0 0 1-8 0" />
@@ -22,10 +23,11 @@ const SERVICES = [
     name: "Tienda online / E-commerce",
     desc: "Tu negocio abierto 24/7. Pagos seguros, gestión de stock y una experiencia de compra que convierte. Sin comisiones de plataformas.",
     price: "Desde 1.500€",
+    roi: "Abierto 24/7, sin staff extra",
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-4.5 h-4.5">
         <rect x="3" y="4" width="18" height="18" rx="2" />
         <line x1="16" y1="2" x2="16" y2="6" />
         <line x1="8" y1="2" x2="8" y2="6" />
@@ -35,10 +37,11 @@ const SERVICES = [
     name: "Sistema de reservas / Citas",
     desc: "Tus clientes reservan solos, a cualquier hora. Cero llamadas perdidas, cero WhatsApp a deshora. Confirmaciones automáticas incluidas.",
     price: "Desde 1.000€",
+    roi: "1 reserva/día extra = amortizado en 2 meses",
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-4.5 h-4.5">
         <rect x="3" y="3" width="18" height="18" rx="2" />
         <path d="M3 9h18M9 21V9" />
       </svg>
@@ -46,6 +49,7 @@ const SERVICES = [
     name: "App web / Dashboard / SaaS",
     desc: "Paneles de gestión, herramientas internas o productos SaaS completos. Full stack, escalables y listos para crecer contigo.",
     price: "Desde 1.500€",
+    roi: "Elimina horas de gestión manual desde el día 1",
   },
 ]
 
@@ -63,7 +67,7 @@ export function Services() {
         <br />
         generan resultados.
       </h2>
-      <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-[480px]">
+      <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-120">
         Precio cerrado antes de empezar. Sin sorpresas ni presupuestos que se
         disparan.
       </p>
@@ -77,20 +81,25 @@ export function Services() {
             key={s.name}
             className="group flex flex-col gap-[0.4rem] p-8 bg-surface transition-colors duration-200 hover:bg-surface-2"
           >
-            <div className="w-[38px] h-[38px] rounded-md bg-white/5 flex items-center justify-center text-muted mb-1.5 transition-colors duration-[180ms] group-hover:bg-accent-dim group-hover:text-accent-light shrink-0">
+            <div className="w-9.5 h-9.5 rounded-md bg-white/5 flex items-center justify-center text-muted mb-1.5 transition-colors duration-180 group-hover:bg-accent-dim group-hover:text-accent-light shrink-0">
               {s.icon}
             </div>
-            <div className="text-[0.97rem] font-semibold text-fg tracking-[-0.01em] transition-colors duration-[180ms] group-hover:text-accent-light">
+            <div className="text-[0.97rem] font-semibold text-fg tracking-[-0.01em] transition-colors duration-180 group-hover:text-accent-light">
               {s.name}
             </div>
             <div className="text-[0.82rem] text-muted leading-[1.6] flex-1">
               {s.desc}
             </div>
-            <div className="mt-auto pt-4 border-t border-border flex items-center justify-between">
-              <span className="text-[0.97rem] font-bold text-accent-light tracking-[-0.01em]">
-                {s.price}
-              </span>
-              <span className="text-subtle text-[0.78rem] transition-colors duration-200 group-hover:text-accent-light">→</span>
+            <div className="mt-auto pt-4 border-t border-border flex items-end justify-between gap-3">
+              <div>
+                <span className="block text-[0.97rem] font-bold text-accent-light tracking-[-0.01em]">
+                  {s.price}
+                </span>
+                <span className="block text-[0.68rem] text-subtle leading-tight mt-0.5">
+                  {s.roi}
+                </span>
+              </div>
+              <span className="text-subtle text-[0.78rem] transition-colors duration-200 group-hover:text-accent-light shrink-0">→</span>
             </div>
           </div>
         ))}
