@@ -20,7 +20,7 @@ export function NicheStrip() {
           {NICHES.map((niche) => (
             <span
               key={niche}
-              className="inline-flex items-center bg-transparent border border-border text-subtle text-[0.73rem] font-medium px-3 py-[0.28rem] rounded-full transition-colors duration-[180ms] hover:border-border-3 hover:text-muted shrink-0"
+              className="inline-flex items-center bg-transparent border border-border-2 text-subtle text-[0.73rem] font-medium px-3 py-[0.28rem] rounded-full transition-colors duration-200 hover:bg-accent-dim hover:text-accent-light hover:border-accent-border shrink-0 cursor-default"
             >
               {niche}
             </span>
