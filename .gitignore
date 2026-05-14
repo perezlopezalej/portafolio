@@ -1,2 +1,6 @@
 portafolio.code-workspace
 *.md
+node_modules
+.next
+next-env.d.ts
+.claude/settings.local.json
