@@ -21,7 +21,7 @@ export function Hero() {
           {/* Headline */}
           <h1
             data-rv
-            className="text-[clamp(2.8rem,5vw,4.8rem)] font-bold tracking-[-0.04em] leading-[1] text-fg mb-3.5"
+            className="text-[clamp(3.2rem,5.5vw,5.5rem)] font-extrabold tracking-[-0.045em] leading-[0.97] text-fg mb-4"
           >
             Webs que hacen
             <br />
@@ -47,8 +47,8 @@ export function Hero() {
           <div data-rv className="flex gap-3 items-center flex-wrap mb-10 sm:flex-row flex-col sm:items-start items-stretch">
             <a
               href="#contacto"
-              className="inline-flex items-center gap-1.5 bg-accent text-white text-[0.85rem] font-semibold px-[1.35rem] py-[0.65rem] rounded-[10px] no-underline transition-[opacity,transform,box-shadow] duration-[180ms] hover:opacity-90 hover:-translate-y-px text-center justify-center"
-              style={{ boxShadow: "0 2px 12px rgba(139,92,246,0.3)" }}
+              className="inline-flex items-center gap-1.5 bg-accent text-white text-[0.85rem] font-semibold px-[1.35rem] py-[0.65rem] rounded-[10px] no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 text-center justify-center"
+              style={{ boxShadow: "0 2px 16px rgba(139,92,246,0.35)" }}
             >
               Hablar de mi proyecto →
             </a>
@@ -63,38 +63,40 @@ export function Hero() {
           {/* Stats row */}
           <div
             data-rv
-            className="flex gap-7 pt-7 border-t border-border flex-wrap items-end"
+            className="flex gap-8 pt-7 border-t border-border flex-wrap items-end"
           >
-            <div className="flex flex-col">
-              <span className="text-[2.4rem] font-bold tracking-[-0.04em] text-fg leading-none">
-                10<span className="text-accent-light">+</span>
-              </span>
-              <span className="text-[0.72rem] text-subtle mt-1 font-medium">
-                Proyectos entregados
-              </span>
-            </div>
-            <div className="w-px h-10 bg-border self-center shrink-0" />
             <div>
-              <div className="text-[1.75rem] font-bold tracking-[-0.04em] text-fg leading-none">
+              <div className="text-[2rem] font-extrabold tracking-[-0.04em] text-fg leading-none">
+                10<span className="text-accent-light">+</span>
+              </div>
+              <div className="text-[0.7rem] text-subtle mt-[0.4rem] font-medium tracking-[0.02em]">
+                Proyectos
+              </div>
+            </div>
+            <div className="w-px h-8 bg-border self-center shrink-0" />
+            <div>
+              <div className="text-[2rem] font-extrabold tracking-[-0.04em] text-fg leading-none">
                 14<span className="text-accent-light">d</span>
               </div>
-              <div className="text-[0.72rem] text-subtle mt-1 font-medium">
+              <div className="text-[0.7rem] text-subtle mt-[0.4rem] font-medium tracking-[0.02em]">
                 Entrega media
               </div>
             </div>
+            <div className="w-px h-8 bg-border self-center shrink-0" />
             <div>
-              <div className="text-[1.75rem] font-bold tracking-[-0.04em] text-fg leading-none">
+              <div className="text-[2rem] font-extrabold tracking-[-0.04em] text-fg leading-none">
                 &lt;24<span className="text-accent-light">h</span>
               </div>
-              <div className="text-[0.72rem] text-subtle mt-1 font-medium">
+              <div className="text-[0.7rem] text-subtle mt-[0.4rem] font-medium tracking-[0.02em]">
                 Respuesta
               </div>
             </div>
+            <div className="w-px h-8 bg-border self-center shrink-0" />
             <div>
-              <div className="text-[1.75rem] font-bold tracking-[-0.04em] text-fg leading-none">
+              <div className="text-[2rem] font-extrabold tracking-[-0.04em] text-fg leading-none">
                 0<span className="text-accent-light">€</span>
               </div>
-              <div className="text-[0.72rem] text-subtle mt-1 font-medium">
+              <div className="text-[0.7rem] text-subtle mt-[0.4rem] font-medium tracking-[0.02em]">
                 Costes ocultos
               </div>
             </div>
@@ -137,8 +139,7 @@ export function Hero() {
 
           {/* Testimonial card */}
           <div
-            className="bg-surface border-l-2 border-l-accent border border-border rounded-[14px] p-[1.35rem] transition-[border-color] duration-[180ms] hover:border-border-2"
-            style={{ borderLeftWidth: "2px", borderLeftColor: "#8b5cf6" }}
+            className="bg-surface border border-border border-l-[3px] border-l-accent rounded-[14px] p-6"
           >
             <div className="text-[2rem] text-accent leading-[0.4] mb-2.5">&ldquo;</div>
             <p className="text-[0.9rem] italic text-fg-2 leading-[1.65] mb-3.5">

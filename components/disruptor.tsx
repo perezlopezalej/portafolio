@@ -24,7 +24,7 @@ export function Disruptor() {
           <span className="flex items-center gap-[7px] text-[0.68rem] font-semibold tracking-[0.1em] uppercase text-subtle mb-6 before:content-[''] before:w-4 before:h-px before:bg-subtle before:shrink-0">
             La diferencia
           </span>
-          <blockquote className="text-[clamp(1.6rem,2.8vw,2.2rem)] font-semibold text-fg leading-[1.25] tracking-[-0.025em] mb-10 border-none p-0 m-0">
+          <blockquote className="text-[clamp(1.7rem,3vw,2.4rem)] font-bold text-fg leading-[1.2] tracking-[-0.03em] mb-10 border-none p-0 m-0">
             &ldquo;Una web bien hecha no es un gasto. Es el comercial que
             trabaja{" "}
             <em className="not-italic italic text-accent-light">

@@ -30,12 +30,9 @@ export function Faq() {
 
   return (
     <div className="section-alt">
-      <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]">
+      <div className="max-w-275 mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-22">
         <p className="eyebrow" data-rv>07 — Preguntas frecuentes</p>
-        <h2
-          data-rv
-          className="text-[clamp(1.85rem,3vw,2.5rem)] font-bold tracking-[-0.035em] leading-[1.1] mb-9 text-fg"
-        >
+        <h2 data-rv className="section-title mb-9">
           Resuelvo tus dudas.
         </h2>
 
@@ -43,14 +40,14 @@ export function Faq() {
           {FAQS.map((f, i) => (
             <div
               key={f.q}
-              className={`faq-item bg-surface border rounded-[10px] overflow-hidden transition-[border-color] duration-[180ms] ${open === i ? "open border-border-2" : "border-border"}`}
+              className={`faq-item bg-surface border rounded-[10px] overflow-hidden transition-[border-color] duration-180 ${open === i ? "open border-border-2" : "border-border"}`}
             >
               <button
                 type="button"
                 onClick={() => setOpen(open === i ? -1 : i)}
-                className="flex items-center justify-between px-5 py-4 cursor-pointer w-full text-left gap-4 transition-colors duration-[180ms] hover:bg-surface-2"
+                className="flex items-center justify-between px-5 py-4 cursor-pointer w-full text-left gap-4 transition-colors duration-180 hover:bg-surface-2"
               >
-                <span className="text-[0.9rem] font-semibold text-fg-2 leading-[1.4] transition-colors duration-[180ms] hover:text-fg">
+                <span className="text-[0.9rem] font-semibold text-fg-2 leading-[1.4] transition-colors duration-180 hover:text-fg">
                   {f.q}
                 </span>
                 <span className="faq-chevron text-subtle text-[0.72rem] shrink-0">▼</span>

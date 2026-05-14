@@ -26,7 +26,7 @@ export function About() {
         {/* Copy */}
         <div>
           <p className="eyebrow">06 — Sobre mí</p>
-          <div className="text-[2rem] font-bold tracking-[-0.035em] text-fg leading-[1.1] mb-[0.35rem]">
+          <div className="text-[2.2rem] font-extrabold tracking-[-0.04em] text-fg leading-[1.05] mb-[0.35rem]">
             Alejandro
             <br />
             Pérez López
@@ -62,8 +62,8 @@ export function About() {
 
           <a
             href="#contacto"
-            className="inline-flex items-center gap-1.5 bg-accent text-white text-[0.85rem] font-semibold px-[1.35rem] py-[0.65rem] rounded-[10px] no-underline transition-[opacity,transform,box-shadow] duration-[180ms] hover:opacity-90 hover:-translate-y-px"
-            style={{ boxShadow: "0 2px 12px rgba(139,92,246,0.3)" }}
+            className="inline-flex items-center gap-1.5 bg-accent text-white text-[0.85rem] font-semibold px-[1.35rem] py-[0.65rem] rounded-[10px] no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0"
+            style={{ boxShadow: "0 2px 16px rgba(139,92,246,0.35)" }}
           >
             Hablemos de tu proyecto →
           </a>

@@ -43,17 +43,14 @@ const VALUES = [
 
 export function Value() {
   return (
-    <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]" id="valor">
+    <div className="max-w-275 mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-22" id="valor">
       <p className="eyebrow" data-rv>03 — Por qué contratarme</p>
-      <h2
-        data-rv
-        className="text-[clamp(1.85rem,3vw,2.5rem)] font-bold tracking-[-0.035em] leading-[1.1] mb-[0.55rem] text-fg"
-      >
+      <h2 data-rv className="section-title">
         Lo que me diferencia
         <br />
         de una agencia.
       </h2>
-      <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-[480px]">
+      <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-120">
         Sin capas de burocracia. Trabajas directamente con el desarrollador que
         hace tu web.
       </p>
@@ -65,12 +62,12 @@ export function Value() {
         {VALUES.map((v) => (
           <div
             key={v.title}
-            className="group p-7 bg-surface border border-border rounded-[14px] transition-[border-color,transform,background] duration-[350ms] cubic-bezier-[0.16,1,0.3,1] hover:border-border-3 hover:-translate-y-[3px] hover:bg-surface-2"
+            className="group p-7 bg-surface border border-border rounded-[14px] transition-[border-color,background] duration-350 hover:border-border-3 hover:bg-surface-2"
           >
-            <div className="w-10 h-10 rounded-md bg-accent-dim flex items-center justify-center text-accent-light mb-4 transition-colors duration-[180ms] group-hover:bg-[rgba(139,92,246,0.18)]">
+            <div className="w-10 h-10 rounded-md bg-accent-dim flex items-center justify-center text-accent-light mb-4 transition-colors duration-180 group-hover:bg-[rgba(139,92,246,0.18)]">
               {v.icon}
             </div>
-            <div className="text-[0.97rem] font-semibold tracking-[-0.01em] text-fg mb-[0.4rem] transition-colors duration-[180ms] group-hover:text-accent-light">
+            <div className="text-[0.97rem] font-semibold tracking-[-0.01em] text-fg mb-[0.4rem] transition-colors duration-180 group-hover:text-accent-light">
               {v.title}
             </div>
             <p className="text-[0.82rem] text-muted leading-[1.65]">{v.desc}</p>

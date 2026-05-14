@@ -31,10 +31,7 @@ export function Process() {
   return (
     <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]">
       <p className="eyebrow" data-rv>04 — Cómo trabajo</p>
-      <h2
-        data-rv
-        className="text-[clamp(1.85rem,3vw,2.5rem)] font-bold tracking-[-0.035em] leading-[1.1] mb-[0.55rem] text-fg"
-      >
+      <h2 data-rv className="section-title">
         Simple, claro y sin rodeos.
       </h2>
       <p data-rv className="text-[0.93rem] text-muted leading-[1.7] max-w-[480px]">

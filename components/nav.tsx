@@ -58,10 +58,10 @@ export function Nav() {
           <a
             key={href}
             href={href}
-            className={`hidden sm:block px-3 py-1.5 rounded-md text-[0.82rem] font-medium no-underline transition-colors duration-150 ${
+            className={`hidden sm:block px-3.5 py-1.5 text-[0.82rem] font-medium no-underline transition-colors duration-200 ${
               active === href.slice(1)
-                ? "text-fg bg-surface-2"
-                : "text-muted hover:text-fg hover:bg-surface-2"
+                ? "text-fg"
+                : "text-muted hover:text-fg-2"
             }`}
           >
             {label}
@@ -69,8 +69,8 @@ export function Nav() {
         ))}
         <a
           href="#contacto"
-          className="ml-1 px-3 py-1.5 rounded-[10px] text-[0.82rem] font-semibold bg-accent text-white no-underline transition-opacity duration-150 hover:opacity-90"
-          style={{ boxShadow: "0 1px 8px rgba(139,92,246,0.25)" }}
+          className="ml-2 px-[0.9rem] py-[0.48rem] rounded-full text-[0.82rem] font-semibold bg-accent text-white no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-px active:translate-y-0"
+          style={{ boxShadow: "0 1px 10px rgba(139,92,246,0.3)" }}
         >
           Contratar →
         </a>

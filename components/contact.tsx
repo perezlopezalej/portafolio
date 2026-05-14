@@ -47,7 +47,7 @@ export function Contact() {
           {/* Left */}
           <div>
             <p className="ct-eyebrow eyebrow">08 — Contacto</p>
-            <h2 className="text-[clamp(2rem,3.5vw,3rem)] font-bold tracking-[-0.04em] leading-[1.05] text-fg mb-4">
+            <h2 className="section-title mb-4">
               ¿Listo para un proyecto que{" "}
               <em className="not-italic italic text-accent-light">
                 funcione de verdad?

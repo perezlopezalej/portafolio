@@ -58,10 +58,7 @@ export function Services() {
       <p className="eyebrow" data-rv>
         01 — Servicios
       </p>
-      <h2
-        data-rv
-        className="text-[clamp(1.85rem,3vw,2.5rem)] font-bold tracking-[-0.035em] leading-[1.1] mb-[0.55rem] text-fg"
-      >
+      <h2 data-rv className="section-title">
         Soluciones web que
         <br />
         generan resultados.
@@ -78,7 +75,7 @@ export function Services() {
         {SERVICES.map((s) => (
           <div
             key={s.name}
-            className="group flex flex-col gap-[0.4rem] p-7 bg-surface transition-colors duration-[180ms] hover:bg-surface-2"
+            className="group flex flex-col gap-[0.4rem] p-8 bg-surface transition-colors duration-200 hover:bg-surface-2"
           >
             <div className="w-[38px] h-[38px] rounded-md bg-white/5 flex items-center justify-center text-muted mb-1.5 transition-colors duration-[180ms] group-hover:bg-accent-dim group-hover:text-accent-light shrink-0">
               {s.icon}
@@ -89,8 +86,11 @@ export function Services() {
             <div className="text-[0.82rem] text-muted leading-[1.6] flex-1">
               {s.desc}
             </div>
-            <div className="text-[1rem] font-bold text-accent-light mt-auto pt-3.5 border-t border-border tracking-[-0.01em]">
-              {s.price}
+            <div className="mt-auto pt-4 border-t border-border flex items-center justify-between">
+              <span className="text-[0.97rem] font-bold text-accent-light tracking-[-0.01em]">
+                {s.price}
+              </span>
+              <span className="text-subtle text-[0.78rem] transition-colors duration-200 group-hover:text-accent-light">→</span>
             </div>
           </div>
         ))}

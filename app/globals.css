@@ -103,10 +103,10 @@ textarea:focus-visible {
 /* ── REVEAL ANIMATION ── */
 [data-rv] {
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(12px);
   transition:
-    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-rv].rv-in {
@@ -116,7 +116,7 @@ textarea:focus-visible {
 
 /* ── GRADIENT TEXT ── */
 .gradient-text {
-  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #6366f1 100%);
+  background: linear-gradient(120deg, #ddd6fe 0%, #a78bfa 50%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,12 +128,12 @@ textarea:focus-visible {
   overflow: hidden;
   background-image:
     radial-gradient(
-      ellipse 70% 50% at 50% -10%,
-      rgba(139, 92, 246, 0.07) 0%,
-      transparent 60%
+      ellipse 80% 55% at 50% -5%,
+      rgba(139, 92, 246, 0.1) 0%,
+      transparent 70%
     ),
-    radial-gradient(circle, rgba(139, 92, 246, 0.15) 1px, transparent 1px);
-  background-size: 100% 100%, 24px 24px;
+    radial-gradient(circle, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px;
 }
 
 /* ── BLINK DOT ── */
@@ -154,20 +154,18 @@ textarea:focus-visible {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background-image:
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 24px,
-      rgba(139, 92, 246, 0.04) 24px,
-      rgba(139, 92, 246, 0.04) 25px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 24px,
-      rgba(139, 92, 246, 0.04) 24px,
-      rgba(139, 92, 246, 0.04) 25px
-    );
+    radial-gradient(circle, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: #f4f4f5;
+  margin-bottom: 0.55rem;
 }
 
 /* ── EYEBROW ── */
