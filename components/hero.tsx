@@ -102,7 +102,7 @@ export function Hero() {
             <div className="w-px h-8 bg-border self-center shrink-0" />
             <div>
               <div className="text-[2rem] font-extrabold tracking-[-0.04em] text-fg leading-none">
-                {"<"}24<span className="text-accent-light">h</span>
+                &lt;24<span className="text-accent-light">h</span>
               </div>
               <div className="text-[0.7rem] text-subtle mt-[0.4rem] font-medium tracking-[0.02em]">
                 Respuesta
@@ -158,8 +158,7 @@ export function Hero() {
           <div
             className="bg-surface border border-border rounded-[14px] p-6"
           >
-            <div className="text-[3.5rem] text-fg leading-none font-bold tracking-[-0.06em] opacity-[0.06] mb-1 select-none">&ldquo;</div>
-            <p className="text-[0.9rem] text-fg-2 leading-[1.65] mb-3.5">
+            <p className="text-[0.9rem] text-fg-2 leading-[1.65] mb-3.5 pl-3 border-l-2 border-accent-border">
               La web nos trajo 3 clientes nuevos el primer mes. No me lo podía
               creer, la verdad.
             </p>

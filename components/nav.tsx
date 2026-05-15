@@ -57,18 +57,21 @@ export function Nav() {
           <a
             key={href}
             href={href}
-            className={`hidden sm:block px-3.5 py-1.5 text-[0.82rem] font-medium no-underline transition-colors duration-200 ${
+            className={`relative hidden sm:block px-3.5 py-1.5 text-[0.82rem] font-medium no-underline transition-colors duration-200 ${
               active === href.slice(1)
                 ? "text-fg"
                 : "text-muted hover:text-fg-2"
             }`}
           >
             {label}
+            {active === href.slice(1) && (
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />
+            )}
           </a>
         ))}
         <a
           href="#contacto"
-          className="ml-2 px-[0.9rem] py-[0.48rem] rounded-full text-[0.82rem] font-semibold bg-accent text-white no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-px active:translate-y-0"
+          className="btn-sweep ml-2 px-[0.9rem] py-[0.48rem] rounded-[10px] text-[0.82rem] font-semibold bg-accent text-white no-underline transition-[filter,transform] duration-200 hover:brightness-110 hover:-translate-y-px active:translate-y-0"
           style={{ boxShadow: "0 1px 10px rgba(109,94,247,0.25)" }}
         >
           Contratar →

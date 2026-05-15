@@ -80,7 +80,7 @@ export function Projects() {
                   src={p.image}
                   alt={p.alt}
                   fill
-                  className="object-cover object-top opacity-85 transition-transform duration-[5000ms] ease-linear group-hover:scale-[1.03]"
+                  className="object-cover object-top opacity-85 transition-transform duration-600 ease-out group-hover:scale-[1.04]"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute top-3 right-3 bg-accent text-white text-[0.67rem] font-bold px-[0.7rem] py-[0.28rem] rounded-full tracking-[0.03em]">
@@ -132,14 +132,20 @@ export function Projects() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={p.link}
-                    target={p.link.startsWith("http") ? "_blank" : undefined}
-                    rel={p.link.startsWith("http") ? "noopener" : undefined}
-                    className="text-[0.8rem] font-semibold text-accent-light no-underline inline-flex items-center gap-1 whitespace-nowrap transition-[gap,color] duration-[180ms] hover:gap-[7px] hover:text-fg shrink-0"
-                  >
-                    {p.linkLabel}
-                  </a>
+                  {p.link.startsWith("http") ? (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener"
+                      className="text-[0.8rem] font-semibold text-accent-light no-underline inline-flex items-center gap-1 whitespace-nowrap transition-[gap,color] duration-[180ms] hover:gap-[7px] hover:text-fg shrink-0"
+                    >
+                      {p.linkLabel}
+                    </a>
+                  ) : (
+                    <span className="text-[0.8rem] font-medium text-subtle inline-flex items-center whitespace-nowrap opacity-50 cursor-default">
+                      {p.linkLabel}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>

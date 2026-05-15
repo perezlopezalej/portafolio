@@ -34,7 +34,7 @@ const SOCIALS = [
 
 export function Footer() {
   return (
-    <footer className="bg-bg border-t border-border px-[clamp(1.5rem,5vw,3.5rem)] py-5 flex justify-between items-center flex-wrap gap-3">
+    <footer className="bg-bg border-t border-border px-[clamp(1.5rem,5vw,3.5rem)] py-5 flex items-center gap-5">
       <div className="flex items-center gap-1">
         {SOCIALS.map(({ href, label, icon }) => (
           <a
@@ -55,7 +55,7 @@ export function Footer() {
       >
         Contratar →
       </a>
-      <span className="text-[0.72rem] text-subtle">© 2026 · alejandrodev.es</span>
+      <span className="ml-auto text-[0.72rem] text-subtle">© 2026 · alejandrodev.es</span>
     </footer>
   )
 }

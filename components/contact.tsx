@@ -47,7 +47,7 @@ export function Contact() {
           {/* Left */}
           <div>
             <p className="eyebrow">08 — Contacto</p>
-            <h2 className="section-title mb-4">
+            <h2 className="section-title">
               ¿Listo para un proyecto que{" "}
               <em className="not-italic text-accent-light">
                 funcione de verdad?
@@ -115,8 +115,8 @@ export function Contact() {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col gap-0">
-            <div className="grid grid-cols-2 gap-4 mb-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <div className="flex flex-col gap-1.5">
                 <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                   Tu nombre
@@ -143,7 +143,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-1.5 mb-4">
+            <div className="flex flex-col gap-1.5">
               <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                 Tu empresa o proyecto
               </label>
@@ -155,7 +155,7 @@ export function Contact() {
               />
             </div>
 
-            <div className="flex flex-col gap-1.5 mb-4">
+            <div className="flex flex-col gap-1.5">
               <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                 Presupuesto estimado
               </label>
@@ -168,7 +168,7 @@ export function Contact() {
               </select>
             </div>
 
-            <div className="flex flex-col gap-1.5 mb-5">
+            <div className="flex flex-col gap-1.5">
               <label className="text-[0.72rem] font-semibold tracking-[0.08em] uppercase text-subtle">
                 ¿Qué necesitas?
               </label>

@@ -5,7 +5,8 @@ const SKILLS = [
 
 export function About() {
   return (
-    <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]" id="sobre-mi">
+    <div className="section-alt" id="sobre-mi">
+      <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]">
       <div data-rv className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-16 items-start">
         {/* Photo placeholder */}
         <div
@@ -35,7 +36,7 @@ export function About() {
             Full Stack Developer · Cádiz, Andalucía
           </div>
           <p className="text-[0.9rem] text-muted leading-[1.75] mb-3">
-            Desarrollo web desde 2022, trabajando con negocios de
+            Desarrollo web desde 2026, trabajando con negocios de
             distintos sectores. Tengo una cosa clara:{" "}
             <strong className="text-fg-2 font-semibold">
               una web bonita que no trae clientes no sirve para nada.
@@ -68,6 +69,7 @@ export function About() {
             Hablemos de tu proyecto →
           </a>
         </div>
+      </div>
       </div>
     </div>
   )

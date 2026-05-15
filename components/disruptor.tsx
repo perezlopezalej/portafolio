@@ -21,7 +21,7 @@ export function Disruptor() {
       <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem] grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* Left */}
         <div>
-          <p className="eyebrow">La diferencia</p>
+          <p className="eyebrow">— La diferencia</p>
           <blockquote className="text-[clamp(1.7rem,3vw,2.4rem)] font-bold text-fg leading-[1.2] tracking-[-0.03em] mb-10 border-none p-0 m-0">
             &ldquo;Una web bien hecha no es un gasto. Es el comercial que
             trabaja{" "}
