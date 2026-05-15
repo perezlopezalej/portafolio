@@ -5,7 +5,7 @@ const SKILLS = [
 
 export function About() {
   return (
-    <div className="section-alt" id="sobre-mi">
+    <div className="border-t border-border/60" id="sobre-mi">
       <div className="max-w-[1100px] mx-auto px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]">
       <div data-rv className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-16 items-start">
         {/* Photo placeholder */}

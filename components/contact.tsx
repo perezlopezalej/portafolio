@@ -40,7 +40,7 @@ export function Contact() {
   return (
     <section
       id="contacto"
-      className="bg-bg-alt border-t border-border px-[clamp(1.5rem,5vw,3.5rem)] py-[5.5rem]"
+      className="border-t border-border px-[clamp(1.5rem,5vw,3.5rem)] py-22"
     >
       <div data-rv className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
